@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "andhra_pradesh_1",
+    "name": "Andhra Pradesh Pre-Matric Scholarship Scheme",
+    "provider": "Andhra Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Andhra Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://jnanabhumi.ap.gov.in/",
+      "site_name": "Andhra Pradesh Jnanabhumi Portal"
+    },
+    "description": "Andhra Pradesh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Andhra Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "andhra_pradesh_2",
+    "name": "Andhra Pradesh Post-Matric Scholarship Scheme",
+    "provider": "Andhra Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Andhra Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://jnanabhumi.ap.gov.in/",
+      "site_name": "Andhra Pradesh Jnanabhumi Portal"
+    },
+    "description": "Andhra Pradesh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Andhra Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "andhra_pradesh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Andhra Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Andhra Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "andhra_pradesh_4",
+    "name": "Andhra Pradesh Postgraduate Scholarship Scheme",
+    "provider": "Andhra Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Andhra Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://jnanabhumi.ap.gov.in/",
+      "site_name": "Andhra Pradesh Jnanabhumi Portal"
+    },
+    "description": "Andhra Pradesh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Andhra Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "andhra_pradesh_5",
+    "name": "Andhra Pradesh Vocational Scholarship Scheme",
+    "provider": "Andhra Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Andhra Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://jnanabhumi.ap.gov.in/",
+      "site_name": "Andhra Pradesh Jnanabhumi Portal"
+    },
+    "description": "Andhra Pradesh Vocational Scholarship Scheme providing financial assistance to eligible students in Andhra Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "arunachal_pradesh_1",
+    "name": "Arunachal Pradesh Pre-Matric Scholarship Scheme",
+    "provider": "Arunachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Arunachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Arunachal Pradesh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Arunachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "arunachal_pradesh_2",
+    "name": "Arunachal Pradesh Post-Matric Scholarship Scheme",
+    "provider": "Arunachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Arunachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Arunachal Pradesh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Arunachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "arunachal_pradesh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Arunachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Arunachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "arunachal_pradesh_4",
+    "name": "Arunachal Pradesh Postgraduate Scholarship Scheme",
+    "provider": "Arunachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Arunachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Arunachal Pradesh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Arunachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "arunachal_pradesh_5",
+    "name": "Arunachal Pradesh Vocational Scholarship Scheme",
+    "provider": "Arunachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Arunachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Arunachal Pradesh Vocational Scholarship Scheme providing financial assistance to eligible students in Arunachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "assam_1",
+    "name": "Assam Pre-Matric Scholarship Scheme",
+    "provider": "Assam State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Assam",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Assam Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Assam. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "assam_2",
+    "name": "Assam Post-Matric Scholarship Scheme",
+    "provider": "Assam State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Assam",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Assam Post-Matric Scholarship Scheme providing financial assistance to eligible students in Assam. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "assam_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Assam",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Assam. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "assam_4",
+    "name": "Assam Postgraduate Scholarship Scheme",
+    "provider": "Assam State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Assam",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Assam Postgraduate Scholarship Scheme providing financial assistance to eligible students in Assam. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "assam_5",
+    "name": "Assam Vocational Scholarship Scheme",
+    "provider": "Assam State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Assam",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Assam Vocational Scholarship Scheme providing financial assistance to eligible students in Assam. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "bihar_1",
+    "name": "Bihar Pre-Matric Scholarship Scheme",
+    "provider": "Bihar State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Bihar",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Bihar Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Bihar. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "bihar_2",
+    "name": "Bihar Post-Matric Scholarship Scheme",
+    "provider": "Bihar State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Bihar",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Bihar Post-Matric Scholarship Scheme providing financial assistance to eligible students in Bihar. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "bihar_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Bihar",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Bihar. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "bihar_4",
+    "name": "Bihar Postgraduate Scholarship Scheme",
+    "provider": "Bihar State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Bihar",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Bihar Postgraduate Scholarship Scheme providing financial assistance to eligible students in Bihar. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "bihar_5",
+    "name": "Bihar Vocational Scholarship Scheme",
+    "provider": "Bihar State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Bihar",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Bihar Vocational Scholarship Scheme providing financial assistance to eligible students in Bihar. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "chhattisgarh_1",
+    "name": "Chhattisgarh Pre-Matric Scholarship Scheme",
+    "provider": "Chhattisgarh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Chhattisgarh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Chhattisgarh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Chhattisgarh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "chhattisgarh_2",
+    "name": "Chhattisgarh Post-Matric Scholarship Scheme",
+    "provider": "Chhattisgarh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Chhattisgarh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Chhattisgarh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Chhattisgarh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "chhattisgarh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Chhattisgarh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Chhattisgarh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "chhattisgarh_4",
+    "name": "Chhattisgarh Postgraduate Scholarship Scheme",
+    "provider": "Chhattisgarh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Chhattisgarh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Chhattisgarh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Chhattisgarh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "chhattisgarh_5",
+    "name": "Chhattisgarh Vocational Scholarship Scheme",
+    "provider": "Chhattisgarh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Chhattisgarh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Chhattisgarh Vocational Scholarship Scheme providing financial assistance to eligible students in Chhattisgarh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "goa_1",
+    "name": "Goa Pre-Matric Scholarship Scheme",
+    "provider": "Goa State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Goa",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Goa Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Goa. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "goa_2",
+    "name": "Goa Post-Matric Scholarship Scheme",
+    "provider": "Goa State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Goa",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Goa Post-Matric Scholarship Scheme providing financial assistance to eligible students in Goa. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "goa_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Goa",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Goa. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "goa_4",
+    "name": "Goa Postgraduate Scholarship Scheme",
+    "provider": "Goa State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Goa",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Goa Postgraduate Scholarship Scheme providing financial assistance to eligible students in Goa. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "goa_5",
+    "name": "Goa Vocational Scholarship Scheme",
+    "provider": "Goa State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Goa",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Goa Vocational Scholarship Scheme providing financial assistance to eligible students in Goa. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "gujarat_1",
+    "name": "Gujarat Pre-Matric Scholarship Scheme",
+    "provider": "Gujarat State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Gujarat",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Gujarat Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Gujarat. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "gujarat_2",
+    "name": "Gujarat Post-Matric Scholarship Scheme",
+    "provider": "Gujarat State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Gujarat",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Gujarat Post-Matric Scholarship Scheme providing financial assistance to eligible students in Gujarat. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "gujarat_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Gujarat",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Gujarat. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "gujarat_4",
+    "name": "Gujarat Postgraduate Scholarship Scheme",
+    "provider": "Gujarat State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Gujarat",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Gujarat Postgraduate Scholarship Scheme providing financial assistance to eligible students in Gujarat. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "gujarat_5",
+    "name": "Gujarat Vocational Scholarship Scheme",
+    "provider": "Gujarat State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Gujarat",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Gujarat Vocational Scholarship Scheme providing financial assistance to eligible students in Gujarat. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "haryana_1",
+    "name": "Haryana Pre-Matric Scholarship Scheme",
+    "provider": "Haryana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Haryana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Haryana Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Haryana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "haryana_2",
+    "name": "Haryana Post-Matric Scholarship Scheme",
+    "provider": "Haryana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Haryana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Haryana Post-Matric Scholarship Scheme providing financial assistance to eligible students in Haryana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "haryana_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Haryana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Haryana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "haryana_4",
+    "name": "Haryana Postgraduate Scholarship Scheme",
+    "provider": "Haryana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Haryana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Haryana Postgraduate Scholarship Scheme providing financial assistance to eligible students in Haryana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "haryana_5",
+    "name": "Haryana Vocational Scholarship Scheme",
+    "provider": "Haryana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Haryana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Haryana Vocational Scholarship Scheme providing financial assistance to eligible students in Haryana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "himachal_pradesh_1",
+    "name": "Himachal Pradesh Pre-Matric Scholarship Scheme",
+    "provider": "Himachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Himachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Himachal Pradesh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Himachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "himachal_pradesh_2",
+    "name": "Himachal Pradesh Post-Matric Scholarship Scheme",
+    "provider": "Himachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Himachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Himachal Pradesh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Himachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "himachal_pradesh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Himachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Himachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "himachal_pradesh_4",
+    "name": "Himachal Pradesh Postgraduate Scholarship Scheme",
+    "provider": "Himachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Himachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Himachal Pradesh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Himachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "himachal_pradesh_5",
+    "name": "Himachal Pradesh Vocational Scholarship Scheme",
+    "provider": "Himachal Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Himachal Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Himachal Pradesh Vocational Scholarship Scheme providing financial assistance to eligible students in Himachal Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "jharkhand_1",
+    "name": "Jharkhand Pre-Matric Scholarship Scheme",
+    "provider": "Jharkhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Jharkhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Jharkhand Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Jharkhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "jharkhand_2",
+    "name": "Jharkhand Post-Matric Scholarship Scheme",
+    "provider": "Jharkhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Jharkhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Jharkhand Post-Matric Scholarship Scheme providing financial assistance to eligible students in Jharkhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "jharkhand_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Jharkhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Jharkhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "jharkhand_4",
+    "name": "Jharkhand Postgraduate Scholarship Scheme",
+    "provider": "Jharkhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Jharkhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Jharkhand Postgraduate Scholarship Scheme providing financial assistance to eligible students in Jharkhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "jharkhand_5",
+    "name": "Jharkhand Vocational Scholarship Scheme",
+    "provider": "Jharkhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Jharkhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Jharkhand Vocational Scholarship Scheme providing financial assistance to eligible students in Jharkhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "karnataka_1",
+    "name": "Karnataka Pre-Matric Scholarship Scheme",
+    "provider": "Karnataka State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Karnataka",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://ssp.karnataka.gov.in/",
+      "site_name": "Karnataka SSP Scholarship Portal"
+    },
+    "description": "Karnataka Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Karnataka. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "karnataka_2",
+    "name": "Karnataka Post-Matric Scholarship Scheme",
+    "provider": "Karnataka State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Karnataka",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://ssp.karnataka.gov.in/",
+      "site_name": "Karnataka SSP Scholarship Portal"
+    },
+    "description": "Karnataka Post-Matric Scholarship Scheme providing financial assistance to eligible students in Karnataka. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "karnataka_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Karnataka",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Karnataka. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "karnataka_4",
+    "name": "Karnataka Postgraduate Scholarship Scheme",
+    "provider": "Karnataka State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Karnataka",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://ssp.karnataka.gov.in/",
+      "site_name": "Karnataka SSP Scholarship Portal"
+    },
+    "description": "Karnataka Postgraduate Scholarship Scheme providing financial assistance to eligible students in Karnataka. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "karnataka_5",
+    "name": "Karnataka Vocational Scholarship Scheme",
+    "provider": "Karnataka State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Karnataka",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://ssp.karnataka.gov.in/",
+      "site_name": "Karnataka SSP Scholarship Portal"
+    },
+    "description": "Karnataka Vocational Scholarship Scheme providing financial assistance to eligible students in Karnataka. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "kerala_1",
+    "name": "Kerala Pre-Matric Scholarship Scheme",
+    "provider": "Kerala State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Kerala",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://dcescholarship.kerala.gov.in/",
+      "site_name": "Kerala Scholarship Portal"
+    },
+    "description": "Kerala Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Kerala. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "kerala_2",
+    "name": "Kerala Post-Matric Scholarship Scheme",
+    "provider": "Kerala State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Kerala",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://dcescholarship.kerala.gov.in/",
+      "site_name": "Kerala Scholarship Portal"
+    },
+    "description": "Kerala Post-Matric Scholarship Scheme providing financial assistance to eligible students in Kerala. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "kerala_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Kerala",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Kerala. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "kerala_4",
+    "name": "Kerala Postgraduate Scholarship Scheme",
+    "provider": "Kerala State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Kerala",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://dcescholarship.kerala.gov.in/",
+      "site_name": "Kerala Scholarship Portal"
+    },
+    "description": "Kerala Postgraduate Scholarship Scheme providing financial assistance to eligible students in Kerala. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "kerala_5",
+    "name": "Kerala Vocational Scholarship Scheme",
+    "provider": "Kerala State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Kerala",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://dcescholarship.kerala.gov.in/",
+      "site_name": "Kerala Scholarship Portal"
+    },
+    "description": "Kerala Vocational Scholarship Scheme providing financial assistance to eligible students in Kerala. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "madhya_pradesh_1",
+    "name": "Madhya Pradesh Pre-Matric Scholarship Scheme",
+    "provider": "Madhya Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Madhya Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "http://scholarshipportal.mp.nic.in/",
+      "site_name": "MP Scholarship Portal"
+    },
+    "description": "Madhya Pradesh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Madhya Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "madhya_pradesh_2",
+    "name": "Madhya Pradesh Post-Matric Scholarship Scheme",
+    "provider": "Madhya Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Madhya Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "http://scholarshipportal.mp.nic.in/",
+      "site_name": "MP Scholarship Portal"
+    },
+    "description": "Madhya Pradesh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Madhya Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "madhya_pradesh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Madhya Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Madhya Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "madhya_pradesh_4",
+    "name": "Madhya Pradesh Postgraduate Scholarship Scheme",
+    "provider": "Madhya Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Madhya Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "http://scholarshipportal.mp.nic.in/",
+      "site_name": "MP Scholarship Portal"
+    },
+    "description": "Madhya Pradesh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Madhya Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "madhya_pradesh_5",
+    "name": "Madhya Pradesh Vocational Scholarship Scheme",
+    "provider": "Madhya Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Madhya Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "http://scholarshipportal.mp.nic.in/",
+      "site_name": "MP Scholarship Portal"
+    },
+    "description": "Madhya Pradesh Vocational Scholarship Scheme providing financial assistance to eligible students in Madhya Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "maharashtra_1",
+    "name": "Maharashtra Pre-Matric Scholarship Scheme",
+    "provider": "Maharashtra State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Maharashtra",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "site_name": "MahaDBT Scholarship Portal"
+    },
+    "description": "Maharashtra Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Maharashtra. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "maharashtra_2",
+    "name": "Maharashtra Post-Matric Scholarship Scheme",
+    "provider": "Maharashtra State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Maharashtra",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "site_name": "MahaDBT Scholarship Portal"
+    },
+    "description": "Maharashtra Post-Matric Scholarship Scheme providing financial assistance to eligible students in Maharashtra. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "maharashtra_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Maharashtra",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Maharashtra. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "maharashtra_4",
+    "name": "Maharashtra Postgraduate Scholarship Scheme",
+    "provider": "Maharashtra State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Maharashtra",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "site_name": "MahaDBT Scholarship Portal"
+    },
+    "description": "Maharashtra Postgraduate Scholarship Scheme providing financial assistance to eligible students in Maharashtra. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "maharashtra_5",
+    "name": "Maharashtra Vocational Scholarship Scheme",
+    "provider": "Maharashtra State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Maharashtra",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "site_name": "MahaDBT Scholarship Portal"
+    },
+    "description": "Maharashtra Vocational Scholarship Scheme providing financial assistance to eligible students in Maharashtra. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "manipur_1",
+    "name": "Manipur Pre-Matric Scholarship Scheme",
+    "provider": "Manipur State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Manipur",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Manipur Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Manipur. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "manipur_2",
+    "name": "Manipur Post-Matric Scholarship Scheme",
+    "provider": "Manipur State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Manipur",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Manipur Post-Matric Scholarship Scheme providing financial assistance to eligible students in Manipur. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "manipur_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Manipur",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Manipur. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "manipur_4",
+    "name": "Manipur Postgraduate Scholarship Scheme",
+    "provider": "Manipur State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Manipur",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Manipur Postgraduate Scholarship Scheme providing financial assistance to eligible students in Manipur. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "manipur_5",
+    "name": "Manipur Vocational Scholarship Scheme",
+    "provider": "Manipur State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Manipur",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Manipur Vocational Scholarship Scheme providing financial assistance to eligible students in Manipur. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "meghalaya_1",
+    "name": "Meghalaya Pre-Matric Scholarship Scheme",
+    "provider": "Meghalaya State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Meghalaya",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Meghalaya Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Meghalaya. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "meghalaya_2",
+    "name": "Meghalaya Post-Matric Scholarship Scheme",
+    "provider": "Meghalaya State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Meghalaya",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Meghalaya Post-Matric Scholarship Scheme providing financial assistance to eligible students in Meghalaya. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "meghalaya_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Meghalaya",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Meghalaya. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "meghalaya_4",
+    "name": "Meghalaya Postgraduate Scholarship Scheme",
+    "provider": "Meghalaya State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Meghalaya",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Meghalaya Postgraduate Scholarship Scheme providing financial assistance to eligible students in Meghalaya. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "meghalaya_5",
+    "name": "Meghalaya Vocational Scholarship Scheme",
+    "provider": "Meghalaya State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Meghalaya",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Meghalaya Vocational Scholarship Scheme providing financial assistance to eligible students in Meghalaya. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "mizoram_1",
+    "name": "Mizoram Pre-Matric Scholarship Scheme",
+    "provider": "Mizoram State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Mizoram",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Mizoram Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Mizoram. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "mizoram_2",
+    "name": "Mizoram Post-Matric Scholarship Scheme",
+    "provider": "Mizoram State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Mizoram",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Mizoram Post-Matric Scholarship Scheme providing financial assistance to eligible students in Mizoram. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "mizoram_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Mizoram",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Mizoram. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "mizoram_4",
+    "name": "Mizoram Postgraduate Scholarship Scheme",
+    "provider": "Mizoram State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Mizoram",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Mizoram Postgraduate Scholarship Scheme providing financial assistance to eligible students in Mizoram. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "mizoram_5",
+    "name": "Mizoram Vocational Scholarship Scheme",
+    "provider": "Mizoram State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Mizoram",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Mizoram Vocational Scholarship Scheme providing financial assistance to eligible students in Mizoram. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "nagaland_1",
+    "name": "Nagaland Pre-Matric Scholarship Scheme",
+    "provider": "Nagaland State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Nagaland",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.nagaland.gov.in/",
+      "site_name": "Nagaland Scholarship Portal"
+    },
+    "description": "Nagaland Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Nagaland. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "nagaland_2",
+    "name": "Nagaland Post-Matric Scholarship Scheme",
+    "provider": "Nagaland State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Nagaland",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.nagaland.gov.in/",
+      "site_name": "Nagaland Scholarship Portal"
+    },
+    "description": "Nagaland Post-Matric Scholarship Scheme providing financial assistance to eligible students in Nagaland. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "nagaland_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Nagaland",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Nagaland. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "nagaland_4",
+    "name": "Nagaland Postgraduate Scholarship Scheme",
+    "provider": "Nagaland State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Nagaland",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.nagaland.gov.in/",
+      "site_name": "Nagaland Scholarship Portal"
+    },
+    "description": "Nagaland Postgraduate Scholarship Scheme providing financial assistance to eligible students in Nagaland. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "nagaland_5",
+    "name": "Nagaland Vocational Scholarship Scheme",
+    "provider": "Nagaland State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Nagaland",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.nagaland.gov.in/",
+      "site_name": "Nagaland Scholarship Portal"
+    },
+    "description": "Nagaland Vocational Scholarship Scheme providing financial assistance to eligible students in Nagaland. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "odisha_1",
+    "name": "Odisha Pre-Matric Scholarship Scheme",
+    "provider": "Odisha State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Odisha",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.odisha.gov.in/",
+      "site_name": "Odisha State Scholarship Portal"
+    },
+    "description": "Odisha Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Odisha. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "odisha_2",
+    "name": "Odisha Post-Matric Scholarship Scheme",
+    "provider": "Odisha State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Odisha",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.odisha.gov.in/",
+      "site_name": "Odisha State Scholarship Portal"
+    },
+    "description": "Odisha Post-Matric Scholarship Scheme providing financial assistance to eligible students in Odisha. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "odisha_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Odisha",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Odisha. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "odisha_4",
+    "name": "Odisha Postgraduate Scholarship Scheme",
+    "provider": "Odisha State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Odisha",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.odisha.gov.in/",
+      "site_name": "Odisha State Scholarship Portal"
+    },
+    "description": "Odisha Postgraduate Scholarship Scheme providing financial assistance to eligible students in Odisha. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "odisha_5",
+    "name": "Odisha Vocational Scholarship Scheme",
+    "provider": "Odisha State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Odisha",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.odisha.gov.in/",
+      "site_name": "Odisha State Scholarship Portal"
+    },
+    "description": "Odisha Vocational Scholarship Scheme providing financial assistance to eligible students in Odisha. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "punjab_1",
+    "name": "Punjab Pre-Matric Scholarship Scheme",
+    "provider": "Punjab State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Punjab",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Punjab Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Punjab. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "punjab_2",
+    "name": "Punjab Post-Matric Scholarship Scheme",
+    "provider": "Punjab State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Punjab",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Punjab Post-Matric Scholarship Scheme providing financial assistance to eligible students in Punjab. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "punjab_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Punjab",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Punjab. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "punjab_4",
+    "name": "Punjab Postgraduate Scholarship Scheme",
+    "provider": "Punjab State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Punjab",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Punjab Postgraduate Scholarship Scheme providing financial assistance to eligible students in Punjab. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "punjab_5",
+    "name": "Punjab Vocational Scholarship Scheme",
+    "provider": "Punjab State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Punjab",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Punjab Vocational Scholarship Scheme providing financial assistance to eligible students in Punjab. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "rajasthan_1",
+    "name": "Rajasthan Pre-Matric Scholarship Scheme",
+    "provider": "Rajasthan State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Rajasthan",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Rajasthan Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Rajasthan. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "rajasthan_2",
+    "name": "Rajasthan Post-Matric Scholarship Scheme",
+    "provider": "Rajasthan State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Rajasthan",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Rajasthan Post-Matric Scholarship Scheme providing financial assistance to eligible students in Rajasthan. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "rajasthan_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Rajasthan",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Rajasthan. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "rajasthan_4",
+    "name": "Rajasthan Postgraduate Scholarship Scheme",
+    "provider": "Rajasthan State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Rajasthan",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Rajasthan Postgraduate Scholarship Scheme providing financial assistance to eligible students in Rajasthan. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "rajasthan_5",
+    "name": "Rajasthan Vocational Scholarship Scheme",
+    "provider": "Rajasthan State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Rajasthan",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Rajasthan Vocational Scholarship Scheme providing financial assistance to eligible students in Rajasthan. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "sikkim_1",
+    "name": "Sikkim Pre-Matric Scholarship Scheme",
+    "provider": "Sikkim State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Sikkim",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.sikkim.gov.in/",
+      "site_name": "Sikkim Scholarship Portal"
+    },
+    "description": "Sikkim Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Sikkim. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "sikkim_2",
+    "name": "Sikkim Post-Matric Scholarship Scheme",
+    "provider": "Sikkim State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Sikkim",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.sikkim.gov.in/",
+      "site_name": "Sikkim Scholarship Portal"
+    },
+    "description": "Sikkim Post-Matric Scholarship Scheme providing financial assistance to eligible students in Sikkim. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "sikkim_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Sikkim",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Sikkim. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "sikkim_4",
+    "name": "Sikkim Postgraduate Scholarship Scheme",
+    "provider": "Sikkim State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Sikkim",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.sikkim.gov.in/",
+      "site_name": "Sikkim Scholarship Portal"
+    },
+    "description": "Sikkim Postgraduate Scholarship Scheme providing financial assistance to eligible students in Sikkim. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "sikkim_5",
+    "name": "Sikkim Vocational Scholarship Scheme",
+    "provider": "Sikkim State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Sikkim",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.sikkim.gov.in/",
+      "site_name": "Sikkim Scholarship Portal"
+    },
+    "description": "Sikkim Vocational Scholarship Scheme providing financial assistance to eligible students in Sikkim. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tamil_nadu_1",
+    "name": "Tamil Nadu Pre-Matric Scholarship Scheme",
+    "provider": "Tamil Nadu State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Tamil Nadu",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://eservices.tn.gov.in/",
+      "site_name": "Tamil Nadu e-Services Portal"
+    },
+    "description": "Tamil Nadu Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Tamil Nadu. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tamil_nadu_2",
+    "name": "Tamil Nadu Post-Matric Scholarship Scheme",
+    "provider": "Tamil Nadu State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Tamil Nadu",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://eservices.tn.gov.in/",
+      "site_name": "Tamil Nadu e-Services Portal"
+    },
+    "description": "Tamil Nadu Post-Matric Scholarship Scheme providing financial assistance to eligible students in Tamil Nadu. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tamil_nadu_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Tamil Nadu",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Tamil Nadu. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tamil_nadu_4",
+    "name": "Tamil Nadu Postgraduate Scholarship Scheme",
+    "provider": "Tamil Nadu State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Tamil Nadu",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://eservices.tn.gov.in/",
+      "site_name": "Tamil Nadu e-Services Portal"
+    },
+    "description": "Tamil Nadu Postgraduate Scholarship Scheme providing financial assistance to eligible students in Tamil Nadu. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tamil_nadu_5",
+    "name": "Tamil Nadu Vocational Scholarship Scheme",
+    "provider": "Tamil Nadu State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Tamil Nadu",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://eservices.tn.gov.in/",
+      "site_name": "Tamil Nadu e-Services Portal"
+    },
+    "description": "Tamil Nadu Vocational Scholarship Scheme providing financial assistance to eligible students in Tamil Nadu. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "telangana_1",
+    "name": "Telangana Pre-Matric Scholarship Scheme",
+    "provider": "Telangana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Telangana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://telanganaepass.cgg.gov.in/",
+      "site_name": "Telangana ePASS Portal"
+    },
+    "description": "Telangana Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Telangana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "telangana_2",
+    "name": "Telangana Post-Matric Scholarship Scheme",
+    "provider": "Telangana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Telangana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://telanganaepass.cgg.gov.in/",
+      "site_name": "Telangana ePASS Portal"
+    },
+    "description": "Telangana Post-Matric Scholarship Scheme providing financial assistance to eligible students in Telangana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "telangana_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Telangana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Telangana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "telangana_4",
+    "name": "Telangana Postgraduate Scholarship Scheme",
+    "provider": "Telangana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Telangana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://telanganaepass.cgg.gov.in/",
+      "site_name": "Telangana ePASS Portal"
+    },
+    "description": "Telangana Postgraduate Scholarship Scheme providing financial assistance to eligible students in Telangana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "telangana_5",
+    "name": "Telangana Vocational Scholarship Scheme",
+    "provider": "Telangana State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Telangana",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://telanganaepass.cgg.gov.in/",
+      "site_name": "Telangana ePASS Portal"
+    },
+    "description": "Telangana Vocational Scholarship Scheme providing financial assistance to eligible students in Telangana. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tripura_1",
+    "name": "Tripura Pre-Matric Scholarship Scheme",
+    "provider": "Tripura State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Tripura",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Tripura Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Tripura. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tripura_2",
+    "name": "Tripura Post-Matric Scholarship Scheme",
+    "provider": "Tripura State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Tripura",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Tripura Post-Matric Scholarship Scheme providing financial assistance to eligible students in Tripura. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tripura_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Tripura",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Tripura. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tripura_4",
+    "name": "Tripura Postgraduate Scholarship Scheme",
+    "provider": "Tripura State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Tripura",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Tripura Postgraduate Scholarship Scheme providing financial assistance to eligible students in Tripura. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "tripura_5",
+    "name": "Tripura Vocational Scholarship Scheme",
+    "provider": "Tripura State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Tripura",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Tripura Vocational Scholarship Scheme providing financial assistance to eligible students in Tripura. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttar_pradesh_1",
+    "name": "Uttar Pradesh Pre-Matric Scholarship Scheme",
+    "provider": "Uttar Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Uttar Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.up.gov.in/",
+      "site_name": "UP Scholarship Portal"
+    },
+    "description": "Uttar Pradesh Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Uttar Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttar_pradesh_2",
+    "name": "Uttar Pradesh Post-Matric Scholarship Scheme",
+    "provider": "Uttar Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Uttar Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.up.gov.in/",
+      "site_name": "UP Scholarship Portal"
+    },
+    "description": "Uttar Pradesh Post-Matric Scholarship Scheme providing financial assistance to eligible students in Uttar Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttar_pradesh_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Uttar Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Uttar Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttar_pradesh_4",
+    "name": "Uttar Pradesh Postgraduate Scholarship Scheme",
+    "provider": "Uttar Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Uttar Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.up.gov.in/",
+      "site_name": "UP Scholarship Portal"
+    },
+    "description": "Uttar Pradesh Postgraduate Scholarship Scheme providing financial assistance to eligible students in Uttar Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttar_pradesh_5",
+    "name": "Uttar Pradesh Vocational Scholarship Scheme",
+    "provider": "Uttar Pradesh State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Uttar Pradesh",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarship.up.gov.in/",
+      "site_name": "UP Scholarship Portal"
+    },
+    "description": "Uttar Pradesh Vocational Scholarship Scheme providing financial assistance to eligible students in Uttar Pradesh. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttarakhand_1",
+    "name": "Uttarakhand Pre-Matric Scholarship Scheme",
+    "provider": "Uttarakhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "Uttarakhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Uttarakhand Pre-Matric Scholarship Scheme providing financial assistance to eligible students in Uttarakhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttarakhand_2",
+    "name": "Uttarakhand Post-Matric Scholarship Scheme",
+    "provider": "Uttarakhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "Uttarakhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Uttarakhand Post-Matric Scholarship Scheme providing financial assistance to eligible students in Uttarakhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttarakhand_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "Uttarakhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in Uttarakhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttarakhand_4",
+    "name": "Uttarakhand Postgraduate Scholarship Scheme",
+    "provider": "Uttarakhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "Uttarakhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Uttarakhand Postgraduate Scholarship Scheme providing financial assistance to eligible students in Uttarakhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "uttarakhand_5",
+    "name": "Uttarakhand Vocational Scholarship Scheme",
+    "provider": "Uttarakhand State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "Uttarakhand",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Uttarakhand Vocational Scholarship Scheme providing financial assistance to eligible students in Uttarakhand. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "west_bengal_1",
+    "name": "West Bengal Pre-Matric Scholarship Scheme",
+    "provider": "West Bengal State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Pre-Matric",
+    "state": "West Bengal",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://wbscc.wb.gov.in/",
+      "site_name": "West Bengal Scholarship Portal"
+    },
+    "description": "West Bengal Pre-Matric Scholarship Scheme providing financial assistance to eligible students in West Bengal. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "west_bengal_2",
+    "name": "West Bengal Post-Matric Scholarship Scheme",
+    "provider": "West Bengal State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Post-Matric",
+    "state": "West Bengal",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://wbscc.wb.gov.in/",
+      "site_name": "West Bengal Scholarship Portal"
+    },
+    "description": "West Bengal Post-Matric Scholarship Scheme providing financial assistance to eligible students in West Bengal. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "west_bengal_3",
+    "name": "Undergraduate Merit-cum-Means Scholarship (National)",
+    "provider": "Central Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Undergraduate",
+    "state": "West Bengal",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://scholarships.gov.in/Students",
+      "site_name": "National Scholarship Portal"
+    },
+    "description": "Undergraduate Merit-cum-Means Scholarship (National) providing financial assistance to eligible students in West Bengal. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "west_bengal_4",
+    "name": "West Bengal Postgraduate Scholarship Scheme",
+    "provider": "West Bengal State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Postgraduate",
+    "state": "West Bengal",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://wbscc.wb.gov.in/",
+      "site_name": "West Bengal Scholarship Portal"
+    },
+    "description": "West Bengal Postgraduate Scholarship Scheme providing financial assistance to eligible students in West Bengal. Please check official portal for exact eligibility and deadlines."
+  },
+  {
+    "id": "west_bengal_5",
+    "name": "West Bengal Vocational Scholarship Scheme",
+    "provider": "West Bengal State Government",
+    "category": "All",
+    "income_limit": "As per official guidelines",
+    "education_level": "Vocational",
+    "state": "West Bengal",
+    "application_start": null,
+    "application_end": null,
+    "apply_link": {
+      "url": "https://wbscc.wb.gov.in/",
+      "site_name": "West Bengal Scholarship Portal"
+    },
+    "description": "West Bengal Vocational Scholarship Scheme providing financial assistance to eligible students in West Bengal. Please check official portal for exact eligibility and deadlines."
+  }
+]

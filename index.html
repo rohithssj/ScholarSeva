@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarSeva - Find Government Scholarships</title>
+    <link rel="icon" type="image/png" href="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============= NAVBAR ============= -->
+    <header class="navbar">
+        <div class="container nav">
+            <a href="#home" class="logo-wrapper">
+                <img src="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png" alt="ScholarSeva Logo" class="logo-icon">
+                <div class="logo">ScholarSeva</div>
+            </a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="scholarships.html">Scholarships</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============= HERO SECTION ============= -->
+    <section id="home" class="hero-section">
+        <div class="container hero">
+            <h1>Discover Your Path to Education</h1>
+            <p>Find and apply for government scholarships tailored to your eligibility in one streamlined platform.</p>
+            <button class="btn btn-primary btn1">
+                <a href="scholarships.html">Explore Scholarships</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- ============= FILTER SECTION ============= -->
+    <section class="filters">
+        <div class="container filter-section">
+            <h3>Smart Scholarship Finder</h3>
+            <div class="filter-fields">
+                <select id="filter-category" aria-label="Select category">
+                    <option value="">All Categories</option>
+                    <option value="sc">SC</option>
+                    <option value="obc">OBC</option>
+                    <option value="st">ST</option>
+                    <option value="general">General</option>
+                    <option value="min">Minority</option>
+                    <option value="All">All</option>
+                </select>
+
+                <input type="number" id="filter-income" placeholder="Annual Income (₹)" aria-label="Annual income filter">
+
+                <select id="filter-state" aria-label="Select state">
+                    <option value="">All States</option>
+                </select>
+
+                <select id="filter-education" aria-label="Select education level">
+                    <option value="">All Education Levels</option>
+                    <option value="ug">Under Graduate</option>
+                    <option value="pg">Post Graduate</option>
+                    <option value="Pre-Matric">Pre-Matric</option>
+                    <option value="Post-Matric">Post-Matric</option>
+                </select>
+
+                <button class="btn btn-secondary btn2" id="apply-filters">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= MAIN SCHOLARSHIPS SECTION ============= -->
+    <section class="scholarships">
+        <div class="container">
+            <h2>Featured Scholarships</h2>
+            <p id="resultCount" style="text-align: center; margin: 20px 0; color: var(--text-muted);">
+                Loading scholarships...
+            </p>
+
+            <div class="card-container" id="home-scholarships">
+                <!-- Scholarships will be populated here -->
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <button class="btn btn-secondary btn2">
+                    <a href="scholarships.html" style="color: white;">Explore More Scholarships</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= ABOUT PREVIEW ============= -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About ScholarSeva</h2>
+            <div class="about-content">
+                <p>
+                    <strong>Hello! I'm a student from CMRIT College,</strong> and ScholarSeva is my solution to a problem I faced personally.
+                </p>
+                <p>
+                    I realized that many talented students struggle to find <strong>genuine, verified government scholarships.</strong> They miss deadlines and opportunities because information is scattered across multiple portals.
+                </p>
+                <p>
+                    <strong>ScholarSeva</strong> is my initiative to simplify scholarship discovery for Indian students. I'm aggregating verified government scholarships in one platform to make your life easier.
+                </p>
+                <p style="color: var(--accent-gold); font-weight: 600;">
+                    🚀 Platform Status: Under Development
+                </p>
+                <p>
+                    More verified scholarships are being added weekly. Our mission is to empower every deserving student to access financial support for their education.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= MODAL FOR SCHOLARSHIP DETAILS ============= -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal" id="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <h2 id="modal-title">Scholarship Details</h2>
+            <div class="modal-content" id="modal-body">
+                <!-- Content will be populated dynamically -->
+            </div>
+            <div class="modal-actions">
+                <a href="#" id="modal-apply-btn" target="_blank" class="btn-apply btn">Apply Now</a>
+                <button class="btn btn-close-modal" id="modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ScholarSeva</h4>
+                    <p>Making scholarship discovery simple and accessible for Indian students.</p>
+                    <p><strong>Built by:</strong> A CMRIT student solving real problems</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform Info</h4>
+                    <p>✓ Verified Government Scholarships</p>
+                    <p>✓ Updated Weekly</p>
+                    <p>✓ 100% Free to Use</p>
+                    <p style="margin-top: 16px; font-size: 0.9rem; color: var(--text-muted);">
+                        Currently in development. New scholarships added regularly.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="scholarships.html">All Scholarships</a>
+                    <a href="#about">About Us</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ScholarSeva. All rights reserved. | Empowering Students Through Scholarships</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Scholarships - ScholarSeva</title>
+    <link rel="icon" type="image/png" href="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============= NAVBAR ============= -->
+    <header class="navbar">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrapper">
+                <img src="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png" alt="ScholarSeva Logo" class="logo-icon">
+                <div class="logo">ScholarSeva</div>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#scholarships">Scholarships</a>
+                <a href="index.html#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============= MAIN CONTENT ============= -->
+    <section id="scholarships" class="scholarships">
+        <div class="container">
+            <h2>All Scholarships</h2>
+            <p id="resultCount" style="text-align: center; margin: 20px 0; color: var(--text-muted);">
+                Loading scholarships...
+            </p>
+
+            <div class="scholarships-page-container">
+                <!-- ============= FILTERS SIDEBAR ============= -->
+                <aside class="filters-sidebar">
+                    <h3>Filter Scholarships</h3>
+
+                    <div class="filter-group">
+                        <label for="sidebar-category">Category</label>
+                        <select id="sidebar-category">
+                            <option value="">All Categories</option>
+                            <option value="sc">SC</option>
+                            <option value="obc">OBC</option>
+                            <option value="st">ST</option>
+                            <option value="general">General</option>
+                            <option value="min">Minority</option>
+                            <option value="All">All</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sidebar-income">Annual Income (₹)</label>
+                        <input type="number" id="sidebar-income" placeholder="e.g. 300000">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sidebar-state">State</label>
+                        <select id="sidebar-state">
+                            <option value="">All States</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sidebar-education">Education Level</label>
+                        <select id="sidebar-education">
+                            <option value="">All Levels</option>
+                            <option value="ug">Under Graduate</option>
+                            <option value="pg">Post Graduate</option>
+                            <option value="Pre-Matric">Pre-Matric</option>
+                            <option value="Post-Matric">Post-Matric</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-secondary btn2" id="sidebar-apply-filters">Apply Filters</button>
+                </aside>
+
+                <!-- ============= SCHOLARSHIPS GRID ============= -->
+                <div class="scholarships-grid" id="scholarships-grid">
+                    <!-- Scholarships will be populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= MODAL FOR SCHOLARSHIP DETAILS ============= -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal" id="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <h2 id="modal-title">Scholarship Details</h2>
+            <div class="modal-content" id="modal-body">
+                <!-- Content will be populated dynamically -->
+            </div>
+            <div class="modal-actions">
+                <a href="#" id="modal-apply-btn" target="_blank" class="btn-apply btn">Apply Now</a>
+                <button class="btn btn-close-modal" id="modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ScholarSeva</h4>
+                    <p>Making scholarship discovery simple and accessible for Indian students.</p>
+                    <p><strong>Built by:</strong> A CMRIT student solving real problems</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform Info</h4>
+                    <p>✓ Verified Government Scholarships</p>
+                    <p>✓ Updated Weekly</p>
+                    <p>✓ 100% Free to Use</p>
+                    <p style="margin-top: 16px; font-size: 0.9rem; color: var(--text-muted);">
+                        Currently in development. New scholarships added regularly.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="#scholarships">All Scholarships</a>
+                    <a href="index.html#about">About Us</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ScholarSeva. All rights reserved. | Empowering Students Through Scholarships</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
