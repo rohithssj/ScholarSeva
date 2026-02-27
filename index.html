@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScholarSeva - Find Government Scholarships</title>
     <link rel="icon" type="image/png" href="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- ============= NAVBAR ============= -->
     <header class="navbar">
@@ -50,7 +54,8 @@
                     <option value="All">All</option>
                 </select>
 
-                <input type="number" id="filter-income" placeholder="Annual Income (₹)" aria-label="Annual income filter">
+                <input type="number" id="filter-income" placeholder="Annual Income (₹)"
+                    aria-label="Annual income filter">
 
                 <select id="filter-state" aria-label="Select state">
                     <option value="">All States</option>
@@ -81,7 +86,19 @@
                 <!-- Scholarships will be populated here -->
             </div>
 
-            <div style="text-align: center; margin-top: 60px;">
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn-export-pdf" id="export-pdf-btn" style="display: none; margin: 0 auto;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Export Eligible Scholarships as PDF
+                </button>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
                 <button class="btn btn-secondary btn2">
                     <a href="scholarships.html" style="color: white;">Explore More Scholarships</a>
                 </button>
@@ -89,25 +106,30 @@
         </div>
     </section>
 
-    <!-- ============= ABOUT PREVIEW ============= -->
+    <!-- ============= ABOUT SECTION ============= -->
     <section id="about" class="about-section">
         <div class="container">
             <h2>About ScholarSeva</h2>
             <div class="about-content">
                 <p>
-                    <strong>Hello! I'm a student from CMRIT College,</strong> and ScholarSeva is my solution to a problem I faced personally.
+                    <strong>Hello! I'm a student from CMRIT College,</strong> and ScholarSeva is my solution to a
+                    problem I faced personally.
                 </p>
                 <p>
-                    I realized that many talented students struggle to find <strong>genuine, verified government scholarships.</strong> They miss deadlines and opportunities because information is scattered across multiple portals.
+                    I realized that many talented students struggle to find <strong>genuine, verified government
+                        scholarships.</strong> They miss deadlines and opportunities because information is scattered
+                    across multiple portals.
                 </p>
                 <p>
-                    <strong>ScholarSeva</strong> is my initiative to simplify scholarship discovery for Indian students. I'm aggregating verified government scholarships in one platform to make your life easier.
+                    <strong>ScholarSeva</strong> is my initiative to simplify scholarship discovery for Indian students.
+                    I'm aggregating verified government scholarships in one platform to make your life easier.
                 </p>
                 <p style="color: var(--accent-gold); font-weight: 600;">
                     🚀 Platform Status: Under Development
                 </p>
                 <p>
-                    More verified scholarships are being added weekly. Our mission is to empower every deserving student to access financial support for their education.
+                    More verified scholarships are being added weekly. Our mission is to empower every deserving student
+                    to access financial support for their education.
                 </p>
             </div>
         </div>
@@ -160,6 +182,8 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

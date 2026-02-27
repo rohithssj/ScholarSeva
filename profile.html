@@ -24,7 +24,6 @@
                 <a href="index.html">Home</a>
                 <a href="scholarships.html">Scholarships</a>
                 <a href="index.html#about">About</a>
-                <a href="#" id="nav-auth-link">Profile</a>
             </nav>
         </div>
     </header>
@@ -58,6 +57,18 @@
                 <div class="card-container" id="saved-scholarships-grid">
                     <!-- Saved scholarships will be rendered here -->
                 </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn-export-pdf" id="export-saved-pdf-btn" style="display: none; margin: 0 auto;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Export Saved Scholarships as PDF
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -86,6 +97,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 

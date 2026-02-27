@@ -1,17 +1,3 @@
-/**
- * ScholarSeva - Scholarship Aggregator
- * Premium Vanilla JavaScript - No Framework
- * 
- * Key Features:
- * - Dynamic scholarship loading from JSON
- * - Modal-based detailed view
- * - Advanced filtering system
- * - Responsive design
- * - Save scholarship feature (localStorage)
- * - Auth system (login, register, logout)
- * - Profile page with saved scholarships
- * - Export filtered scholarships as PDF
- */
 
 // ========================================
 // STATE MANAGEMENT
@@ -19,7 +5,7 @@
 
 let allScholarships = [];
 let filteredScholarships = [];
-let currentPage = 'home'; // 'home', 'scholarships', 'profile', 'login', 'register'
+let currentPage = 'home';
 
 // ========================================
 // DOM ELEMENT REFERENCES
@@ -33,7 +19,7 @@ const modalApplyBtn = document.getElementById('modal-apply-btn');
 const modalTitle = document.getElementById('modal-title');
 const modalBody = document.getElementById('modal-body');
 
-// Filter elements - Common
+// Filter elements - Common (homepage)
 const filterElements = {
   category: document.getElementById('filter-category'),
   income: document.getElementById('filter-income'),
@@ -42,7 +28,7 @@ const filterElements = {
   applyBtn: document.getElementById('apply-filters'),
 };
 
-// Filter elements - Sidebar
+// Filter elements - Sidebar (scholarships page)
 const sidebarFilterElements = {
   category: document.getElementById('sidebar-category'),
   income: document.getElementById('sidebar-income'),
@@ -69,9 +55,9 @@ const savedScholarshipsGrid = document.getElementById('saved-scholarships-grid')
 
 document.addEventListener('DOMContentLoaded', async () => {
   detectCurrentPage();
-  updateNavbarAuthLink();
+  renderNavbar();
 
-  // Session guard for profile page
+
   if (currentPage === 'profile') {
     const currentUser = getCurrentUser();
     if (!currentUser) {
@@ -81,7 +67,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     populateProfileInfo(currentUser);
   }
 
-  // Redirect logged-in users away from login/register
   if (currentPage === 'login' || currentPage === 'register') {
     const currentUser = getCurrentUser();
     if (currentUser) {
@@ -90,7 +75,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Load scholarships for pages that need them
   if (currentPage === 'home' || currentPage === 'scholarships' || currentPage === 'profile') {
     await loadScholarships();
   }
@@ -119,6 +103,50 @@ function detectCurrentPage() {
 }
 
 // ========================================
+// NAVBAR RENDERING (FIXES DUPLICATE ISSUE)
+// ========================================
+
+
+function renderNavbar() {
+  const user = getCurrentUser();
+  const navElements = document.querySelectorAll('header.navbar nav');
+
+  navElements.forEach(nav => {
+    nav.querySelectorAll('.nav-auth-link').forEach(el => el.remove());
+
+    if (user) {
+      const profileLink = document.createElement('a');
+      profileLink.href = 'profile.html';
+      profileLink.textContent = 'Profile';
+      profileLink.className = 'nav-auth-link';
+      nav.appendChild(profileLink);
+
+      const logoutLink = document.createElement('a');
+      logoutLink.href = '#';
+      logoutLink.textContent = 'Logout';
+      logoutLink.className = 'nav-auth-link nav-logout-link';
+      logoutLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        logoutUser();
+      });
+      nav.appendChild(logoutLink);
+    } else {
+      const loginLink = document.createElement('a');
+      loginLink.href = 'login.html';
+      loginLink.textContent = 'Login';
+      loginLink.className = 'nav-auth-link';
+      nav.appendChild(loginLink);
+
+      const registerLink = document.createElement('a');
+      registerLink.href = 'register.html';
+      registerLink.textContent = 'Register';
+      registerLink.className = 'nav-auth-link';
+      nav.appendChild(registerLink);
+    }
+  });
+}
+
+// ========================================
 // LOAD SCHOLARSHIPS FROM JSON
 // ========================================
 
@@ -134,9 +162,6 @@ async function loadScholarships() {
   }
 }
 
-// ========================================
-// INITIALIZE PAGE BASED ON CURRENT ROUTE
-// ========================================
 
 function initializePage() {
   if (currentPage === 'home' && homeScholarships) {
@@ -159,10 +184,8 @@ function populateStateDropdown(dropdownId) {
   const dropdown = document.getElementById(dropdownId);
   if (!dropdown) return;
 
-  // Get unique states from scholarships
   const states = [...new Set(allScholarships.map(s => s.state))].sort();
 
-  // Add states to dropdown
   states.forEach(state => {
     const option = document.createElement('option');
     option.value = state;
@@ -175,9 +198,7 @@ function populateStateDropdown(dropdownId) {
 // DISPLAY FUNCTIONS
 // ========================================
 
-/**
- * Display limited scholarships on homepage (first 20)
- */
+
 function displayHomeScholarships() {
   if (!homeScholarships) return;
 
@@ -197,9 +218,7 @@ function displayAllScholarships() {
   toggleExportButton();
 }
 
-/**
- * Generic scholarship rendering function
- */
+
 function renderScholarships(scholarships, container) {
   container.innerHTML = '';
 
@@ -264,14 +283,11 @@ function updateResultCount(count) {
 // MODAL FUNCTIONALITY
 // ========================================
 
-/**
- * Open modal with scholarship details
- */
+
 function openModal(scholarshipId) {
   const scholarship = allScholarships.find(s => s.id === scholarshipId);
   if (!scholarship) return;
 
-  // Populate modal content
   modalTitle.textContent = scholarship.name;
   modalBody.innerHTML = `
     <div class="modal-field">
@@ -304,10 +320,7 @@ function openModal(scholarshipId) {
     </div>
   `;
 
-  // Set apply button link
   modalApplyBtn.href = scholarship.apply_link.url;
-
-  // Show modal
   modalBackdrop.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -324,7 +337,6 @@ function closeModal() {
 // FILTERING LOGIC
 // ========================================
 
-
 function applyFilters(filterObj) {
   const category = filterObj.category.value.toLowerCase();
   const income = filterObj.income.value;
@@ -332,12 +344,10 @@ function applyFilters(filterObj) {
   const education = filterObj.education.value;
 
   filteredScholarships = allScholarships.filter(scholarship => {
-    // Category filter
     if (category && category !== '' && scholarship.category.toLowerCase() !== category) {
       if (scholarship.category.toLowerCase() !== 'all') return false;
     }
 
-    // Income filter
     if (income) {
       const incomeLimit = scholarship.income_limit.toLowerCase();
       if (!incomeLimit.includes('varies') && !incomeLimit.includes('as per')) {
@@ -360,6 +370,7 @@ function applyFilters(filterObj) {
 
   if (currentPage === 'home' && homeScholarships) {
     displayHomeScholarships();
+    toggleExportButton();
   } else if (currentPage === 'scholarships' && scholarshipsGrid) {
     displayAllScholarships();
   }
@@ -369,9 +380,7 @@ function applyFilters(filterObj) {
 // AUTH FUNCTIONS (localStorage)
 // ========================================
 
-/**
- * Get current logged-in user
- */
+
 function getCurrentUser() {
   try {
     return JSON.parse(localStorage.getItem('currentUser'));
@@ -380,9 +389,7 @@ function getCurrentUser() {
   }
 }
 
-/**
- * Get all registered users
- */
+
 function getUsers() {
   try {
     return JSON.parse(localStorage.getItem('users')) || [];
@@ -391,14 +398,11 @@ function getUsers() {
   }
 }
 
-/**
- * Register a new user
- */
+
 function registerUser(username, email, password) {
   const errorEl = document.getElementById('register-error');
   const successEl = document.getElementById('register-success');
 
-  // Validation
   if (!username || !email || !password) {
     errorEl.textContent = 'Please fill in all fields.';
     errorEl.style.display = 'block';
@@ -415,7 +419,6 @@ function registerUser(username, email, password) {
 
   const users = getUsers();
 
-  // Check duplicate email
   if (users.some(u => u.email.toLowerCase() === email.toLowerCase())) {
     errorEl.textContent = 'An account with this email already exists.';
     errorEl.style.display = 'block';
@@ -423,7 +426,6 @@ function registerUser(username, email, password) {
     return false;
   }
 
-  // Create user object
   const newUser = {
     id: Date.now(),
     username: username.trim(),
@@ -448,9 +450,7 @@ function registerUser(username, email, password) {
   return true;
 }
 
-/**
- * Login user
- */
+
 function loginUser(email, password) {
   const errorEl = document.getElementById('login-error');
 
@@ -471,17 +471,13 @@ function loginUser(email, password) {
     return false;
   }
 
-  // Store session
   localStorage.setItem('currentUser', JSON.stringify(user));
   errorEl.style.display = 'none';
-
   window.location.href = 'index.html';
   return true;
 }
 
-/**
- * Logout user
- */
+
 function logoutUser() {
   localStorage.removeItem('currentUser');
   window.location.href = 'login.html';
@@ -491,22 +487,17 @@ function logoutUser() {
 // SAVE SCHOLARSHIP FUNCTIONS
 // ========================================
 
-/**
- * Check if scholarship is saved by current user
- */
+
 function isScholarshipSaved(scholarshipId) {
   const user = getCurrentUser();
   if (!user || !user.savedScholarships) return false;
   return user.savedScholarships.includes(scholarshipId);
 }
 
-/**
- * Save or unsave a scholarship
- */
+
 function saveScholarship(scholarshipId) {
   const user = getCurrentUser();
 
-  // Not logged in → redirect to login
   if (!user) {
     window.location.href = 'login.html';
     return;
@@ -515,17 +506,13 @@ function saveScholarship(scholarshipId) {
   const savedIndex = user.savedScholarships.indexOf(scholarshipId);
 
   if (savedIndex === -1) {
-    // Save it (prevent duplicates)
     user.savedScholarships.push(scholarshipId);
   } else {
-    // Unsave it
     user.savedScholarships.splice(savedIndex, 1);
   }
 
-  // Update currentUser in localStorage
   localStorage.setItem('currentUser', JSON.stringify(user));
 
-  // Also update the users array
   const users = getUsers();
   const userIndex = users.findIndex(u => u.id === user.id);
   if (userIndex !== -1) {
@@ -533,13 +520,10 @@ function saveScholarship(scholarshipId) {
     localStorage.setItem('users', JSON.stringify(users));
   }
 
-  // Update the save button visually
   updateSaveButtons(scholarshipId);
 }
 
-/**
- * Update all save buttons for a given scholarship ID
- */
+
 function updateSaveButtons(scholarshipId) {
   const buttons = document.querySelectorAll(`.btn-save-scholarship[data-scholarship-id="${scholarshipId}"]`);
   const isSaved = isScholarshipSaved(scholarshipId);
@@ -564,9 +548,7 @@ function updateSaveButtons(scholarshipId) {
 // PROFILE PAGE FUNCTIONS
 // ========================================
 
-/**
- * Populate profile info
- */
+
 function populateProfileInfo(user) {
   const usernameEl = document.getElementById('profile-username');
   const emailEl = document.getElementById('profile-email');
@@ -575,13 +557,12 @@ function populateProfileInfo(user) {
   if (emailEl) emailEl.textContent = user.email;
 }
 
-/**
- * Render saved scholarships on profile page
- */
+
 function renderSavedScholarships() {
   const user = getCurrentUser();
   const container = savedScholarshipsGrid;
   const countEl = document.getElementById('saved-count');
+  const exportBtn = document.getElementById('export-saved-pdf-btn');
 
   if (!user || !container) return;
 
@@ -595,10 +576,10 @@ function renderSavedScholarships() {
         <p>Browse scholarships and click the bookmark icon to save them here.</p>
       </div>
     `;
+    if (exportBtn) exportBtn.style.display = 'none';
     return;
   }
 
-  // Match saved IDs with scholarship data
   const savedScholarships = allScholarships.filter(s => savedIds.includes(s.id));
 
   if (countEl) {
@@ -610,61 +591,59 @@ function renderSavedScholarships() {
     const card = createScholarshipCard(scholarship, index);
     container.appendChild(card);
   });
-}
 
-// ========================================
-// NAVBAR AUTH LINK
-// ========================================
-
-/**
- * Update navbar to show Login or Profile link
- */
-function updateNavbarAuthLink() {
-  const user = getCurrentUser();
-  const navElements = document.querySelectorAll('nav');
-
-  navElements.forEach(nav => {
-    // Check if an auth link already exists
-    const existingAuthLink = nav.querySelector('.nav-auth-link');
-    if (existingAuthLink) return;
-
-    const authLink = document.createElement('a');
-    authLink.className = 'nav-auth-link';
-
-    if (user) {
-      authLink.href = 'profile.html';
-      authLink.textContent = 'Profile';
-    } else {
-      authLink.href = 'login.html';
-      authLink.textContent = 'Login';
-    }
-
-    nav.appendChild(authLink);
-  });
-}
-
-// ========================================
-// EXPORT FILTERED PDF
-// ========================================
-
-/**
- * Toggle export button visibility
- */
-function toggleExportButton() {
-  const exportBtn = document.getElementById('export-pdf-btn');
-  if (!exportBtn) return;
-
-  if (filteredScholarships.length > 0 && currentPage === 'scholarships') {
+  if (exportBtn && savedScholarships.length > 0) {
     exportBtn.style.display = 'inline-flex';
-  } else {
-    exportBtn.style.display = 'none';
   }
 }
 
-/**
- * Export filtered scholarships as PDF
- */
-function exportFilteredPDF(filteredData) {
+// ========================================
+// EXPORT PDF FUNCTIONS
+// ========================================
+
+
+function showExportButton() {
+  const exportBtn = document.getElementById('export-pdf-btn');
+  if (exportBtn) exportBtn.style.display = 'inline-flex';
+}
+
+function hideExportButton() {
+  const exportBtn = document.getElementById('export-pdf-btn');
+  if (exportBtn) exportBtn.style.display = 'none';
+}
+
+
+function toggleExportButton() {
+  if (filteredScholarships.length > 0) {
+    showExportButton();
+  } else {
+    hideExportButton();
+  }
+}
+
+
+function getActiveFilterSummary() {
+  const parts = [];
+  const filterObj = sidebarFilterElements.category ? sidebarFilterElements : filterElements;
+
+  if (filterObj.category && filterObj.category.value) {
+    parts.push(`Category: ${filterObj.category.options[filterObj.category.selectedIndex].text}`);
+  }
+  if (filterObj.income && filterObj.income.value) {
+    parts.push(`Income: Rs.${filterObj.income.value}`);
+  }
+  if (filterObj.state && filterObj.state.value) {
+    parts.push(`State: ${filterObj.state.value}`);
+  }
+  if (filterObj.education && filterObj.education.value) {
+    parts.push(`Education: ${filterObj.education.options[filterObj.education.selectedIndex].text}`);
+  }
+
+  return parts.length > 0 ? parts.join(' | ') : 'None (showing all)';
+}
+
+
+function generateScholarshipPDF(scholarships, title, filterSummary, filename) {
   if (typeof window.jspdf === 'undefined') {
     alert('PDF library is loading. Please try again in a moment.');
     return;
@@ -679,7 +658,6 @@ function exportFilteredPDF(filteredData) {
   const contentWidth = pageWidth - margin * 2;
   let yPos = margin;
 
-  // Helper: add new page if needed
   function checkPageBreak(requiredHeight) {
     if (yPos + requiredHeight > pageHeight - margin) {
       doc.addPage();
@@ -689,14 +667,12 @@ function exportFilteredPDF(filteredData) {
     return false;
   }
 
-  // ===== TITLE =====
   doc.setFontSize(20);
   doc.setFont('helvetica', 'bold');
   doc.setTextColor(30, 58, 138);
-  doc.text('ScholarSeva Eligible Scholarships Report', margin, yPos);
+  doc.text(title, margin, yPos);
   yPos += 10;
 
-  // ===== METADATA =====
   doc.setFontSize(10);
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(100, 100, 100);
@@ -711,27 +687,23 @@ function exportFilteredPDF(filteredData) {
     yPos += 6;
   }
 
-  // ===== FILTER CRITERIA =====
-  const filterSummary = getActiveFilterSummary();
-  if (filterSummary) {
+  // ===== FILTER CRITERIA (if provided) =====
+  if (filterSummary !== null) {
     doc.text(`Filters Applied: ${filterSummary}`, margin, yPos);
     yPos += 6;
   }
 
-  doc.text(`Total Results: ${filteredData.length} scholarship(s)`, margin, yPos);
+  doc.text(`Total Results: ${scholarships.length} scholarship(s)`, margin, yPos);
   yPos += 10;
 
-  // ===== DIVIDER =====
   doc.setDrawColor(212, 175, 55);
   doc.setLineWidth(0.5);
   doc.line(margin, yPos, pageWidth - margin, yPos);
   yPos += 10;
 
-  // ===== SCHOLARSHIP LIST =====
-  filteredData.forEach((s, i) => {
+  scholarships.forEach((s, i) => {
     checkPageBreak(60);
 
-    // Scholarship number and name
     doc.setFontSize(12);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(30, 58, 138);
@@ -740,7 +712,6 @@ function exportFilteredPDF(filteredData) {
     doc.text(nameLines, margin, yPos);
     yPos += nameLines.length * 6 + 2;
 
-    // Details
     doc.setFontSize(9);
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(60, 60, 60);
@@ -763,8 +734,7 @@ function exportFilteredPDF(filteredData) {
 
     yPos += 6;
 
-    // Light separator between scholarships
-    if (i < filteredData.length - 1) {
+    if (i < scholarships.length - 1) {
       checkPageBreak(4);
       doc.setDrawColor(200, 200, 200);
       doc.setLineWidth(0.2);
@@ -776,41 +746,48 @@ function exportFilteredPDF(filteredData) {
   // ===== FOOTER ON LAST PAGE =====
   doc.setFontSize(8);
   doc.setTextColor(150, 150, 150);
-  doc.text('Generated by ScholarSeva - Empowering Students Through Scholarships', margin, pageHeight - 10);
+  doc.text('Generated by ScholarSeva', margin, pageHeight - 14);
+  doc.text('Platform under development. Scholarships updated weekly.', margin, pageHeight - 10);
 
   // Save
-  doc.save('ScholarSeva_Eligible_Scholarships.pdf');
+  doc.save(filename);
 }
 
-/**
- * Get a readable summary of active filter criteria
- */
-function getActiveFilterSummary() {
-  const parts = [];
-  const filterObj = sidebarFilterElements.category ? sidebarFilterElements : filterElements;
 
-  if (filterObj.category && filterObj.category.value) {
-    parts.push(`Category: ${filterObj.category.options[filterObj.category.selectedIndex].text}`);
-  }
-  if (filterObj.income && filterObj.income.value) {
-    parts.push(`Income: ₹${filterObj.income.value}`);
-  }
-  if (filterObj.state && filterObj.state.value) {
-    parts.push(`State: ${filterObj.state.value}`);
-  }
-  if (filterObj.education && filterObj.education.value) {
-    parts.push(`Education: ${filterObj.education.options[filterObj.education.selectedIndex].text}`);
-  }
-
-  return parts.length > 0 ? parts.join(' | ') : 'None (showing all)';
+function exportFilteredPDF(filteredData) {
+  const filterSummary = getActiveFilterSummary();
+  generateScholarshipPDF(
+    filteredData,
+    'ScholarSeva Eligible Scholarships Report',
+    filterSummary,
+    'ScholarSeva_Eligible_Scholarships.pdf'
+  );
 }
 
-// ========================================
-// EVENT LISTENERS
-// ========================================
+
+function exportSavedScholarshipsPDF() {
+  const user = getCurrentUser();
+  if (!user) return;
+
+  const savedIds = user.savedScholarships || [];
+  const savedScholarships = allScholarships.filter(s => savedIds.includes(s.id));
+
+  if (savedScholarships.length === 0) {
+    alert('No saved scholarships to export.');
+    return;
+  }
+
+  generateScholarshipPDF(
+    savedScholarships,
+    'ScholarSeva Saved Scholarships Report',
+    null,
+    'ScholarSeva_Saved_Scholarships.pdf'
+  );
+}
+
+
 
 function setupEventListeners() {
-  // Modal close buttons (only if modal elements exist)
   if (modalCloseBtn) {
     modalCloseBtn.addEventListener('click', closeModal);
   }
@@ -846,9 +823,7 @@ function setupEventListeners() {
     });
   }
 
-  // Event delegation for dynamic buttons
   document.addEventListener('click', (e) => {
-    // View Details button
     if (e.target.classList.contains('btn-view-details')) {
       const scholarshipId = e.target.dataset.id;
       openModal(scholarshipId);
@@ -864,7 +839,6 @@ function setupEventListeners() {
     }
   });
 
-  // Login form
   if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -874,7 +848,6 @@ function setupEventListeners() {
     });
   }
 
-  // Register form
   if (registerForm) {
     registerForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -885,25 +858,28 @@ function setupEventListeners() {
     });
   }
 
-  // Logout button
   const logoutBtn = document.getElementById('logout-btn');
   if (logoutBtn) {
     logoutBtn.addEventListener('click', logoutUser);
   }
 
-  // Export PDF button
+  // Export filtered PDF button (homepage & scholarships page)
   const exportBtn = document.getElementById('export-pdf-btn');
   if (exportBtn) {
     exportBtn.addEventListener('click', () => {
       exportFilteredPDF(filteredScholarships);
     });
   }
+
+  const exportSavedBtn = document.getElementById('export-saved-pdf-btn');
+  if (exportSavedBtn) {
+    exportSavedBtn.addEventListener('click', () => {
+      exportSavedScholarshipsPDF();
+    });
+  }
 }
 
 
-/**
- * Show error message to user
- */
 function showErrorMessage(message) {
   console.error(message);
   if (homeScholarships) {
