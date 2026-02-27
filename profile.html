@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ScholarSeva</title>
+    <link rel="icon" type="image/png" href="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ============= NAVBAR ============= -->
+    <header class="navbar">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrapper">
+                <img src="icon/ChatGPT Image Feb 24, 2026, 12_33_15 AM.png" alt="ScholarSeva Logo" class="logo-icon">
+                <div class="logo">ScholarSeva</div>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="scholarships.html">Scholarships</a>
+                <a href="index.html#about">About</a>
+                <a href="#" id="nav-auth-link">Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============= PROFILE SECTION ============= -->
+    <section class="profile-section">
+        <div class="container">
+            <h2>My Profile</h2>
+
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="profile-info">
+                    <h3 id="profile-username">Username</h3>
+                    <p id="profile-email">email@example.com</p>
+                </div>
+                <button class="btn btn-secondary btn2" id="logout-btn">Logout</button>
+            </div>
+
+            <!-- ============= SAVED SCHOLARSHIPS ============= -->
+            <div class="saved-scholarships-section">
+                <h2>Saved Scholarships</h2>
+                <p id="saved-count" style="text-align: center; margin: 20px 0; color: var(--text-muted);">
+                    Loading saved scholarships...
+                </p>
+                <div class="card-container" id="saved-scholarships-grid">
+                    <!-- Saved scholarships will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= MODAL FOR SCHOLARSHIP DETAILS ============= -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal" id="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <h2 id="modal-title">Scholarship Details</h2>
+            <div class="modal-content" id="modal-body">
+                <!-- Content will be populated dynamically -->
+            </div>
+            <div class="modal-actions">
+                <a href="#" id="modal-apply-btn" target="_blank" class="btn-apply btn">Apply Now</a>
+                <button class="btn btn-close-modal" id="modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 ScholarSeva. All rights reserved. | Empowering Students Through Scholarships</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
