@@ -449,8 +449,6 @@ select option {
 .card-badge {
   display: inline-block;
   padding: 6px 14px;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
-  color: var(--primary-dark);
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
@@ -458,6 +456,17 @@ select option {
   letter-spacing: 0.5px;
   width: fit-content;
   margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-badge.central {
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: var(--primary-dark);
+}
+
+.card-badge.state {
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+  color: white;
 }
 
 .card-info {
@@ -501,6 +510,28 @@ select option {
 .details-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-compare {
+  flex: 1;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: 0.9rem;
+}
+
+.btn-compare:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.btn-compare.added {
+  background: var(--accent-gold);
+  color: var(--primary-dark);
 }
 
 .card-link {
@@ -631,6 +662,54 @@ select option {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.modal-docs ul,
+.apply-steps ol {
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.modal-docs li,
+.apply-steps li {
+  margin-bottom: 8px;
+}
+
+.compare-fab {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
+  color: var(--primary-dark);
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+.compare-fab span {
+  background: var(--primary-dark);
+  color: var(--accent-gold);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.compare-fab:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
 }
 
 .modal-field p {
@@ -674,6 +753,18 @@ select option {
 }
 
 .btn-close-modal:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.btn-copy-link {
+  background: rgba(212, 175, 55, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-copy-link:hover {
   background: rgba(212, 175, 55, 0.1);
   border-color: var(--accent-gold);
   color: var(--accent-gold);

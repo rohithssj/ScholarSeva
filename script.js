@@ -8,12 +8,53 @@ function formatCurrency(num) {
   return num.toLocaleString('en-IN');
 }
 
+function getBadgeType(scholarship) {
+  return scholarship.provider.toLowerCase().includes('central') ? 'Central' : 'State';
+}
+
+function renderDocuments(scholarship) {
+  if (!scholarship.documents_required || scholarship.documents_required.length === 0) {
+    return `<p>Documents may vary. Check official portal.</p>`;
+  }
+  return `<ul>${scholarship.documents_required.map(doc => `<li>${doc}</li>`).join('')}</ul>`;
+}
+
+function renderSteps() {
+  return `
+    <div class="apply-steps">
+      <ol>
+        <li>Visit official portal</li>
+        <li>Register/Login</li>
+        <li>Fill application form</li>
+        <li>Upload documents</li>
+        <li>Submit and track status</li>
+      </ol>
+    </div>
+  `;
+}
+
+function copyLink(url, btnElement) {
+  navigator.clipboard.writeText(url).then(() => {
+    const originalText = btnElement.textContent;
+    btnElement.textContent = 'Link Copied!';
+    btnElement.style.backgroundColor = '#28a745';
+    setTimeout(() => {
+      btnElement.textContent = originalText;
+      btnElement.style.backgroundColor = '';
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy link: ', err);
+    alert('Failed to copy link. Please manually copy: ' + url);
+  });
+}
+
 // ========================================
 // STATE MANAGEMENT
 // ========================================
 
 let allScholarships = [];
 let filteredScholarships = [];
+let compareList = JSON.parse(localStorage.getItem('compareList')) || [];
 let currentPage = 'home';
 
 // ========================================
@@ -34,6 +75,7 @@ const filterElements = {
   income: document.getElementById('filter-income'),
   state: document.getElementById('filter-state'),
   education: document.getElementById('filter-education'),
+  search: document.getElementById('filter-search'),
   applyBtn: document.getElementById('apply-filters'),
 };
 
@@ -43,6 +85,7 @@ const sidebarFilterElements = {
   income: document.getElementById('sidebar-income'),
   state: document.getElementById('sidebar-state'),
   education: document.getElementById('sidebar-education'),
+  search: document.getElementById('sidebar-search'),
   applyBtn: document.getElementById('sidebar-apply-filters'),
 };
 
@@ -263,7 +306,7 @@ function createScholarshipCard(scholarship, index) {
         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
       </svg>
     </button>
-    <div class="card-badge">${scholarship.provider.includes('Central') ? 'Central' : 'State'}</div>
+    <div class="card-badge ${getBadgeType(scholarship).toLowerCase()}">${getBadgeType(scholarship)}</div>
     <h3>${scholarship.name}</h3>
     <div class="card-info">
       <p><strong>Provider:</strong> ${scholarship.provider}</p>
@@ -276,7 +319,10 @@ function createScholarshipCard(scholarship, index) {
       }
     </div>
     <div class="card-btn">
-      <button class="btn-view-details" data-index="${index}" data-id="${scholarship.id}">View Details</button>
+      <button class="btn-view-details" data-id="${scholarship.id}">View Details</button>
+      <button class="btn-compare ${compareList.includes(scholarship.id) ? 'added' : ''}" data-id="${scholarship.id}">
+        ${compareList.includes(scholarship.id) ? '✔ Added' : 'Compare'}
+      </button>
     </div>
   `;
 
@@ -335,9 +381,29 @@ function openModal(scholarshipId) {
       <label>Application Portal</label>
       <p>${scholarship.apply_link.site_name}</p>
     </div>
+    <div class="modal-field">
+      <label>Required Documents</label>
+      <div class="modal-docs">
+        ${renderDocuments(scholarship)}
+      </div>
+    </div>
+    <div class="modal-field">
+      <label>How to Apply</label>
+      ${renderSteps()}
+    </div>
   `;
 
   modalApplyBtn.href = scholarship.apply_link.url;
+  
+  const copyBtn = document.getElementById('modal-copy-link-btn');
+  if (copyBtn) {
+    copyBtn.dataset.url = scholarship.apply_link.url;
+    // Clear old event listeners if any, or just add one once.
+    // Since we open the modal many times, we should check if we already added it.
+    // But in this setup, we can just replace the listener or use a fresh button if we were recreating the modal.
+    // However, the simplest is to just set the dataset and ensure the listener is added in setupEventListeners.
+  }
+
   modalBackdrop.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -359,8 +425,15 @@ function applyFilters(filterObj) {
   const income = filterObj.income.value;
   const state = filterObj.state.value;
   const education = filterObj.education.value;
+  const search = filterObj.search ? filterObj.search.value.toLowerCase() : '';
 
   filteredScholarships = allScholarships.filter(scholarship => {
+    if (search) {
+      const nameMatch = scholarship.name.toLowerCase().includes(search);
+      const stateMatch = scholarship.state.toLowerCase().includes(search);
+      if (!nameMatch && !stateMatch) return false;
+    }
+
     if (category && category !== '' && scholarship.category.toLowerCase() !== category) {
       if (scholarship.category.toLowerCase() !== 'all') return false;
     }
@@ -556,7 +629,81 @@ function updateSaveButtons(scholarshipId) {
     if (svg) {
       svg.setAttribute('fill', isSaved ? 'currentColor' : 'none');
     }
+    
+    // Feature enhancement: Optional visual check
+    const existingCheck = btn.querySelector('.save-check');
+    if (isSaved && !existingCheck) {
+      const check = document.createElement('span');
+      check.className = 'save-check';
+      check.innerHTML = '✔';
+      check.style.marginLeft = '4px';
+      btn.appendChild(check);
+    } else if (!isSaved && existingCheck) {
+      existingCheck.remove();
+    }
   });
+}
+
+// ========================================
+// COMPARISON FUNCTIONS
+// ========================================
+
+function addToCompare(id) {
+  if (compareList.includes(id)) {
+    removeFromCompare(id);
+    return;
+  }
+  if (compareList.length >= 3) {
+    alert("Max 3 scholarships for comparison reached!");
+    return;
+  }
+  compareList.push(id);
+  saveCompareList();
+}
+
+function removeFromCompare(id) {
+  compareList = compareList.filter(item => item !== id);
+  saveCompareList();
+}
+
+function saveCompareList() {
+  localStorage.setItem('compareList', JSON.stringify(compareList));
+  updateCompareButtons();
+  updateCompareFloatingButton();
+}
+
+function updateCompareButtons() {
+  const buttons = document.querySelectorAll('.btn-compare');
+  buttons.forEach(btn => {
+    const id = btn.dataset.id;
+    if (compareList.includes(id)) {
+      btn.classList.add('added');
+      btn.innerText = '✔ Added';
+    } else {
+      btn.classList.remove('added');
+      btn.innerText = 'Compare';
+    }
+  });
+}
+
+function updateCompareFloatingButton() {
+  let floatingBtn = document.getElementById('floating-compare-btn');
+  if (compareList.length > 0) {
+    if (!floatingBtn) {
+      floatingBtn = document.createElement('div');
+      floatingBtn.id = 'floating-compare-btn';
+      floatingBtn.innerHTML = `
+        <a href="compare.html" class="compare-fab">
+          Compare <span>${compareList.length}</span>
+        </a>
+      `;
+      document.body.appendChild(floatingBtn);
+    } else {
+      floatingBtn.querySelector('span').innerText = compareList.length;
+    }
+  } else if (floatingBtn) {
+    floatingBtn.remove();
+  }
 }
 
 // ========================================
@@ -838,6 +985,28 @@ function setupEventListeners() {
     });
   }
 
+  // Live Search Listeners
+  if (filterElements.search) {
+    filterElements.search.addEventListener('input', () => {
+      applyFilters(filterElements);
+    });
+  }
+  if (sidebarFilterElements.search) {
+    sidebarFilterElements.search.addEventListener('input', () => {
+      applyFilters(sidebarFilterElements);
+    });
+  }
+
+  // Copy link functionality in modal (delegate or direct)
+  const copyBtn = document.getElementById('modal-copy-link-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function() {
+      if (this.dataset.url) {
+        copyLink(this.dataset.url, this);
+      }
+    });
+  }
+
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('btn-view-details')) {
       const scholarshipId = e.target.dataset.id;
@@ -892,6 +1061,18 @@ function setupEventListeners() {
       exportSavedScholarshipsPDF();
     });
   }
+
+  // Compare Buttons event delegation
+  document.addEventListener('click', (e) => {
+    const compareBtn = e.target.closest('.btn-compare');
+    if (compareBtn) {
+      const id = compareBtn.dataset.id;
+      addToCompare(id);
+    }
+  });
+
+  // Initial update
+  updateCompareFloatingButton();
 }
 
 
