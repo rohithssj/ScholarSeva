@@ -54,7 +54,6 @@ function copyLink(url, btnElement) {
 
 let allScholarships = [];
 let filteredScholarships = [];
-let compareList = JSON.parse(localStorage.getItem('compareList')) || [];
 let currentPage = 'home';
 
 // ========================================
@@ -219,12 +218,15 @@ function initializePage() {
   if (currentPage === 'home' && homeScholarships) {
     populateStateDropdown('filter-state');
     displayHomeScholarships();
+    renderRecommendedSection();
+    checkDeadlineAlerts();
   } else if (currentPage === 'scholarships' && scholarshipsGrid) {
     populateStateDropdown('filter-state');
     populateStateDropdown('sidebar-state');
     displayAllScholarships();
   } else if (currentPage === 'profile' && savedScholarshipsGrid) {
     renderSavedScholarships();
+    setupProfileUpdate();
   }
 }
 
@@ -297,8 +299,13 @@ function createScholarshipCard(scholarship, index) {
   const card = document.createElement('div');
   card.className = 'card';
 
+  const user = getCurrentUser();
+  const matchScore = calculateMatchScore(user, scholarship);
+  const successChance = getSuccessChance(matchScore, scholarship);
+  const deadlineStatus = getDeadlineStatus(scholarship.application_end);
   const isSaved = isScholarshipSaved(scholarship.id);
   const savedClass = isSaved ? 'saved' : '';
+  const status = getScholarshipStatus(scholarship.id);
 
   card.innerHTML = `
     <button class="btn-save-scholarship ${savedClass}" data-scholarship-id="${scholarship.id}" title="${isSaved ? 'Remove from saved' : 'Save scholarship'}">
@@ -307,24 +314,47 @@ function createScholarshipCard(scholarship, index) {
       </svg>
     </button>
     <div class="card-badge ${getBadgeType(scholarship).toLowerCase()}">${getBadgeType(scholarship)}</div>
+    
+    <div class="card-metrics">
+       <div class="metric match-score">Match: <span>${matchScore}%</span></div>
+       <div class="metric success-chance">Success: <span>${successChance}%</span></div>
+    </div>
+
+    <div id="ai-priority-${scholarship.id}" class="ai-priority-badge"></div>
+
     <h3>${scholarship.name}</h3>
+    
     <div class="card-info">
       <p><strong>Provider:</strong> ${scholarship.provider}</p>
       <p><strong>State:</strong> ${scholarship.state}</p>
       <p><strong>Education:</strong> ${scholarship.education_level}</p>
-      ${scholarship.income_limit && scholarship.income_limit.value !== undefined 
-        ? `<p><strong>Income Limit:</strong> ₹${formatCurrency(scholarship.income_limit.value)}*</p>
-           <p style="font-size: 0.75rem; color: #666; font-style: italic;">*${scholarship.income_limit.note}</p>`
-        : `<p><strong>Income Limit:</strong> As per official guidelines</p>`
-      }
+      <div class="deadline-status ${deadlineStatus.class}">${deadlineStatus.status}</div>
     </div>
+
+    ${currentPage === 'profile' && isSaved ? `
+      <div class="status-tracker">
+        <label>Status:</label>
+        <select class="status-toggle" data-id="${scholarship.id}">
+          <option value="saved" ${status === 'saved' ? 'selected' : ''}>Saved</option>
+          <option value="interested" ${status === 'interested' ? 'selected' : ''}>Interested</option>
+          <option value="applied" ${status === 'applied' ? 'selected' : ''}>Applied</option>
+          <option value="completed" ${status === 'completed' ? 'selected' : ''}>Completed</option>
+        </select>
+      </div>
+    ` : ''}
+
     <div class="card-btn">
       <button class="btn-view-details" data-id="${scholarship.id}">View Details</button>
       <button class="btn-compare ${compareList.includes(scholarship.id) ? 'added' : ''}" data-id="${scholarship.id}">
-        ${compareList.includes(scholarship.id) ? '✔ Added' : 'Compare'}
+        ${compareList.includes(scholarship.id) ? 'Added' : 'Compare'}
       </button>
     </div>
   `;
+
+  // Trigger priority message if score is high
+  if (matchScore >= 80) {
+    setTimeout(() => triggerPriorityMessage(scholarship, matchScore, deadlineStatus.daysRem), 100);
+  }
 
   return card;
 }
@@ -391,7 +421,22 @@ function openModal(scholarshipId) {
       <label>How to Apply</label>
       ${renderSteps()}
     </div>
+
+    <!-- AI ADVISOR SECTION -->
+    <div id="ai-advisor-container">
+      <div class="ai-section">
+        <h4>AI Quick Summary</h4>
+        <div id="ai-quick-summary-body" class="ai-loading">Generating summary...</div>
+      </div>
+      <div class="ai-section">
+        <h4>Why this Match?</h4>
+        <div id="ai-match-explanation-body" class="ai-loading">Generating explanation...</div>
+      </div>
+    </div>
   `;
+
+  // Trigger AI Features for Modal
+  triggerModalAIFeatures(scholarship);
 
   modalApplyBtn.href = scholarship.apply_link.url;
   
@@ -579,7 +624,7 @@ function logoutUser() {
 function isScholarshipSaved(scholarshipId) {
   const user = getCurrentUser();
   if (!user || !user.savedScholarships) return false;
-  return user.savedScholarships.includes(scholarshipId);
+  return user.savedScholarships.some(s => (typeof s === 'string' ? s === scholarshipId : s.id === scholarshipId));
 }
 
 
@@ -591,10 +636,10 @@ function saveScholarship(scholarshipId) {
     return;
   }
 
-  const savedIndex = user.savedScholarships.indexOf(scholarshipId);
+  const savedIndex = user.savedScholarships.findIndex(s => (typeof s === 'string' ? s === scholarshipId : s.id === scholarshipId));
 
   if (savedIndex === -1) {
-    user.savedScholarships.push(scholarshipId);
+    user.savedScholarships.push({ id: scholarshipId, status: 'saved' });
   } else {
     user.savedScholarships.splice(savedIndex, 1);
   }
@@ -609,6 +654,38 @@ function saveScholarship(scholarshipId) {
   }
 
   updateSaveButtons(scholarshipId);
+}
+
+function getScholarshipStatus(scholarshipId) {
+  const user = getCurrentUser();
+  if (!user || !user.savedScholarships) return 'none';
+  const item = user.savedScholarships.find(s => (typeof s === 'string' ? s === scholarshipId : s.id === scholarshipId));
+  return (item && item.status) ? item.status : (item ? 'saved' : 'none');
+}
+
+function updateScholarshipStatus(scholarshipId, status) {
+  const user = getCurrentUser();
+  if (!user) return;
+
+  const item = user.savedScholarships.find(s => (typeof s === 'string' ? s === scholarshipId : s.id === scholarshipId));
+  if (item) {
+    if (typeof item === 'string') {
+      const idx = user.savedScholarships.indexOf(scholarshipId);
+      user.savedScholarships[idx] = { id: scholarshipId, status: status };
+    } else {
+      item.status = status;
+    }
+  } else {
+    user.savedScholarships.push({ id: scholarshipId, status: status });
+  }
+
+  localStorage.setItem('currentUser', JSON.stringify(user));
+  const users = getUsers();
+  const uIdx = users.findIndex(u => u.id === user.id);
+  if (uIdx !== -1) {
+    users[uIdx].savedScholarships = user.savedScholarships;
+    localStorage.setItem('users', JSON.stringify(users));
+  }
 }
 
 
@@ -645,31 +722,117 @@ function updateSaveButtons(scholarshipId) {
 }
 
 // ========================================
+// SMART RECOMMENDATION ENGINE
+// ========================================
+
+function calculateMatchScore(user, scholarship) {
+  if (!user) return 0;
+  let score = 0;
+
+  // Category match → +25
+  const userCat = user.category ? user.category.toLowerCase() : '';
+  const scholCat = scholarship.category ? scholarship.category.toLowerCase() : '';
+  if (scholCat === 'all' || (userCat && scholCat === userCat)) {
+    score += 25;
+  }
+
+  // Income eligibility → +25
+  const userIncome = user.income ? Number(user.income) : Infinity;
+  if (scholarship.income_limit && scholarship.income_limit.value !== undefined) {
+    if (userIncome <= scholarship.income_limit.value) {
+      score += 25;
+    }
+  } else {
+    score += 25; // No limit = match
+  }
+
+  // State match → +20
+  const userState = user.state ? user.state.toLowerCase() : '';
+  const scholState = scholarship.state ? scholarship.state.toLowerCase() : '';
+  if (scholState === 'all india' || (userState && scholState === userState)) {
+    score += 20;
+  }
+
+  // Education match → +30
+  const userEdu = user.education ? user.education.toLowerCase() : '';
+  const scholEdu = scholarship.education_level ? scholarship.education_level.toLowerCase() : '';
+  if (userEdu && scholEdu.includes(userEdu)) {
+    score += 30;
+  }
+
+  return score;
+}
+
+function getSuccessChance(matchScore, scholarship) {
+  let chance = matchScore;
+
+  if (scholarship.income_limit && scholarship.income_limit.value !== undefined) {
+    const limit = scholarship.income_limit.value;
+    if (limit > 300000) {
+      chance += 10;
+    } else if (limit < 150000) {
+      chance -= 10;
+    }
+  }
+
+  return Math.max(0, Math.min(100, chance));
+}
+
+function getRecommendedScholarships(user, scholarships) {
+  if (!user) return [];
+  
+  const scored = scholarships.map(s => ({
+    ...s,
+    matchScore: calculateMatchScore(user, s)
+  }));
+
+  return scored
+    .filter(s => s.matchScore > 0)
+    .sort((a, b) => b.matchScore - a.matchScore)
+    .slice(0, 5);
+}
+
+// ========================================
+// DEADLINE ALERT SYSTEM
+// ========================================
+
+function getDeadlineStatus(deadlineStr) {
+  if (!deadlineStr) return { status: 'Ongoing', class: 'ongoing', daysRem: null };
+
+  const deadline = new Date(deadlineStr);
+  const now = new Date();
+  const diffTime = deadline - now;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  if (diffDays < 0) return { status: 'Closed', class: 'closed', daysRem: diffDays };
+  if (diffDays <= 3) return { status: 'Last chance', class: 'urgent', daysRem: diffDays };
+  return { status: `Closing in ${diffDays} days`, class: 'soon', daysRem: diffDays };
+}
+
+// ========================================
 // COMPARISON FUNCTIONS
 // ========================================
 
-function addToCompare(id) {
-  if (compareList.includes(id)) {
-    removeFromCompare(id);
-    return;
-  }
-  if (compareList.length >= 3) {
-    alert("Max 3 scholarships for comparison reached!");
-    return;
-  }
-  compareList.push(id);
-  saveCompareList();
-}
+let compareList = [];
 
-function removeFromCompare(id) {
-  compareList = compareList.filter(item => item !== id);
-  saveCompareList();
-}
-
-function saveCompareList() {
-  localStorage.setItem('compareList', JSON.stringify(compareList));
+function toggleCompare(scholarshipId) {
+  const index = compareList.indexOf(scholarshipId);
+  if (index === -1) {
+    if (compareList.length >= 3) {
+      alert("You can only compare up to 3 scholarships.");
+      return;
+    }
+    compareList.push(scholarshipId);
+  } else {
+    compareList.splice(index, 1);
+  }
+  
   updateCompareButtons();
-  updateCompareFloatingButton();
+  if (compareList.length > 0) {
+    showCompareFloatingBtn();
+  } else {
+    hideCompareFloatingBtn();
+  }
 }
 
 function updateCompareButtons() {
@@ -678,33 +841,169 @@ function updateCompareButtons() {
     const id = btn.dataset.id;
     if (compareList.includes(id)) {
       btn.classList.add('added');
-      btn.innerText = '✔ Added';
+      btn.textContent = 'Added to Compare';
     } else {
       btn.classList.remove('added');
-      btn.innerText = 'Compare';
+      btn.textContent = 'Compare';
     }
   });
 }
 
-function updateCompareFloatingButton() {
-  let floatingBtn = document.getElementById('floating-compare-btn');
-  if (compareList.length > 0) {
-    if (!floatingBtn) {
-      floatingBtn = document.createElement('div');
-      floatingBtn.id = 'floating-compare-btn';
-      floatingBtn.innerHTML = `
-        <a href="compare.html" class="compare-fab">
-          Compare <span>${compareList.length}</span>
-        </a>
-      `;
-      document.body.appendChild(floatingBtn);
-    } else {
-      floatingBtn.querySelector('span').innerText = compareList.length;
-    }
-  } else if (floatingBtn) {
-    floatingBtn.remove();
+function showCompareFloatingBtn() {
+  let btn = document.getElementById('floating-compare-btn');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'floating-compare-btn';
+    btn.className = 'floating-compare-btn';
+    btn.innerHTML = `Compare (${compareList.length}/3)`;
+    btn.onclick = openCompareModal;
+    document.body.appendChild(btn);
+  } else {
+    btn.innerHTML = `Compare (${compareList.length}/3)`;
+    btn.style.display = 'block';
   }
 }
+
+function hideCompareFloatingBtn() {
+  const btn = document.getElementById('floating-compare-btn');
+  if (btn) btn.style.display = 'none';
+}
+
+function openCompareModal() {
+  const modal = document.getElementById('compare-modal-backdrop') || createCompareModalHTML();
+  renderCompareTable();
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCompareModal() {
+  const modal = document.getElementById('compare-modal-backdrop');
+  if (modal) modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+function createCompareModalHTML() {
+  const backdrop = document.createElement('div');
+  backdrop.id = 'compare-modal-backdrop';
+  backdrop.className = 'modal-backdrop';
+  backdrop.innerHTML = `
+    <div class="modal compare-modal" id="compare-modal-content">
+      <button class="modal-close" id="compare-modal-close">✕</button>
+      <h2>Compare Scholarships</h2>
+      <div class="modal-content" id="compare-table-container"></div>
+      <div class="modal-actions">
+        <button class="btn btn-close-modal" id="compare-modal-close-btn">Close</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(backdrop);
+  document.getElementById('compare-modal-close').onclick = closeCompareModal;
+  document.getElementById('compare-modal-close-btn').onclick = closeCompareModal;
+  backdrop.onclick = (e) => { if (e.target === backdrop) closeCompareModal(); };
+  return backdrop;
+}
+
+function renderCompareTable() {
+  const container = document.getElementById('compare-table-container');
+  const user = getCurrentUser();
+  const selected = allScholarships.filter(s => compareList.includes(s.id));
+  
+  if (selected.length === 0) {
+    container.innerHTML = "<p>No scholarships selected for comparison.</p>";
+    return;
+  }
+
+  const scored = selected.map(s => {
+    const score = calculateMatchScore(user, s);
+    return {
+      ...s,
+      score: score,
+      success: getSuccessChance(score, s)
+    };
+  });
+  
+  const maxScore = Math.max(...scored.map(s => s.score));
+  
+  let html = `
+    <div class="table-responsive">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            ${scored.map(s => `
+              <th class="${s.score === maxScore && maxScore > 0 ? 'best-choice-col' : ''}">
+                ${s.score === maxScore && maxScore > 0 ? '<div class="best-badge">Best Choice</div>' : ''}
+                <div class="compare-th-content">${s.name}</div>
+              </th>
+            `).join('')}
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Provider</strong></td>${scored.map(s => `<td>${s.provider}</td>`).join('')}</tr>
+          <tr><td><strong>Income Limit</strong></td>${scored.map(s => `<td>₹${s.income_limit ? formatCurrency(s.income_limit.value) : 'N/A'}</td>`).join('')}</tr>
+          <tr><td><strong>Category</strong></td>${scored.map(s => `<td>${s.category}</td>`).join('')}</tr>
+          <tr><td><strong>Education</strong></td>${scored.map(s => `<td>${s.education_level}</td>`).join('')}</tr>
+          <tr><td><strong>Benefits</strong></td>${scored.map(s => `<td>${s.description.substring(0, 100)}...</td>`).join('')}</tr>
+          <tr><td><strong>Deadline</strong></td>${scored.map(s => `<td>${s.application_end || 'Ongoing'}</td>`).join('')}</tr>
+          <tr><td><strong>Match Score</strong></td>${scored.map(s => `<td><span class="score-badge">${s.score}%</span></td>`).join('')}</tr>
+          <tr><td><strong>Success %</strong></td>${scored.map(s => `<td><span class="success-badge">${s.success}%</span></td>`).join('')}</tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+  container.innerHTML = html + `<div id="ai-compare-summary" class="ai-compare-box ai-loading">Generating AI comparison summary...</div>`;
+  
+  // Trigger AI Comparison
+  triggerCompareAISummary(scored);
+}
+
+function triggerModalAIFeatures(scholarship) {
+  const user = getCurrentUser();
+  const summaryBody = document.getElementById('ai-quick-summary-body');
+  const explanationBody = document.getElementById('ai-match-explanation-body');
+
+  if (summaryBody) {
+    generateQuickSummary(scholarship).then(result => {
+      summaryBody.classList.remove('ai-loading');
+      summaryBody.innerHTML = `<div class="ai-result">${formatAIReturn(result)}</div>`;
+    });
+  }
+
+  if (explanationBody && user) {
+    generateMatchExplanation(user, scholarship).then(result => {
+      explanationBody.classList.remove('ai-loading');
+      explanationBody.innerHTML = `<div class="ai-result">${formatAIReturn(result)}</div>`;
+    });
+  }
+}
+
+function triggerCompareAISummary(scholarships) {
+  const container = document.getElementById('ai-compare-summary');
+  if (!container) return;
+
+  generateCompareSummary(scholarships).then(result => {
+    container.classList.remove('ai-loading');
+    container.innerHTML = `
+      <h4>AI Insight</h4>
+      <div class="ai-result">${formatAIReturn(result)}</div>
+    `;
+  });
+}
+
+function formatAIReturn(text) {
+  if (text.startsWith('Error:')) return `<span style="color: #ef4444;">${text}</span>`;
+  
+  // Convert bullet points (starts with * or - or digit) into list items
+  const lines = text.split('\n').filter(l => l.trim() !== '');
+  if (lines.some(l => l.trim().startsWith('*') || l.trim().startsWith('-') || /^\d+\./.test(l.trim()))) {
+    return `<ul>${lines.map(l => {
+      let content = l.trim().replace(/^[\*\-\d\.]+\s*/, '');
+      return `<li>${content}</li>`;
+    }).join('')}</ul>`;
+  }
+  return text.replace(/\n/g, '<br>');
+}
+
 
 // ========================================
 // PROFILE PAGE FUNCTIONS
@@ -717,6 +1016,128 @@ function populateProfileInfo(user) {
 
   if (usernameEl) usernameEl.textContent = user.username;
   if (emailEl) emailEl.textContent = user.email;
+
+  // Populate profile update form if it exists
+  const categoryEl = document.getElementById('profile-category');
+  const incomeEl = document.getElementById('profile-income');
+  const stateEl = document.getElementById('profile-state');
+  const educationEl = document.getElementById('profile-education');
+
+  if (categoryEl) categoryEl.value = user.category || '';
+  if (incomeEl) incomeEl.value = user.income || '';
+  if (stateEl) stateEl.value = user.state || '';
+  if (educationEl) educationEl.value = user.education || '';
+}
+
+function setupProfileUpdate() {
+  const form = document.getElementById('profile-update-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const user = getCurrentUser();
+    if (!user) return;
+
+    user.category = document.getElementById('profile-category').value;
+    user.income = document.getElementById('profile-income').value;
+    user.state = document.getElementById('profile-state').value;
+    user.education = document.getElementById('profile-education').value;
+
+    localStorage.setItem('currentUser', JSON.stringify(user));
+
+    const users = getUsers();
+    const idx = users.findIndex(u => u.id === user.id);
+    if (idx !== -1) {
+      users[idx] = user;
+      localStorage.setItem('users', JSON.stringify(users));
+    }
+
+    const successEl = document.getElementById('profile-update-success');
+    if (successEl) {
+      successEl.style.display = 'block';
+      setTimeout(() => successEl.style.display = 'none', 3000);
+    }
+  });
+}
+
+function renderRecommendedSection() {
+  const user = getCurrentUser();
+  const container = document.getElementById('recommended-scholarships');
+  const section = document.getElementById('recommended-section');
+  
+  if (!user || !container || !section) return;
+
+  const recommended = getRecommendedScholarships(user, allScholarships);
+  
+  if (recommended.length > 0) {
+    section.style.display = 'block';
+    renderScholarships(recommended, container);
+    
+    // Highlight the very best one with AI label after rendering
+    const topChoice = recommended[0];
+    const topCard = container.querySelector(`.card:first-child`);
+    if (topCard && topChoice.matchScore > 80) {
+      topCard.insertAdjacentHTML('afterbegin', `<span class="best-choice-badge">Recommended for you ⭐</span>`);
+      // Add reason below title
+      const title = topCard.querySelector('h3');
+      const reasonPlaceholder = document.createElement('div');
+      reasonPlaceholder.id = `ai-best-reason-${topChoice.id}`;
+      reasonPlaceholder.style.fontSize = '0.75rem';
+      reasonPlaceholder.style.color = '#10b981';
+      reasonPlaceholder.style.marginBottom = '10px';
+      reasonPlaceholder.className = 'ai-loading';
+      reasonPlaceholder.textContent = 'Analyzing best choice...';
+      title.after(reasonPlaceholder);
+      
+      generateBestChoice(recommended, user).then(res => {
+        reasonPlaceholder.classList.remove('ai-loading');
+        reasonPlaceholder.textContent = res;
+      });
+    }
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+function triggerPriorityMessage(scholarship, score, daysRem) {
+  const container = document.getElementById(`ai-priority-${scholarship.id}`);
+  if (!container) return;
+
+  generatePriorityMessage(scholarship, score, daysRem).then(result => {
+    container.textContent = result;
+  });
+}
+
+function checkDeadlineAlerts() {
+  const user = getCurrentUser();
+  const alertContainer = document.getElementById('deadline-alerts');
+  if (!user || !alertContainer) return;
+
+  const savedIds = user.savedScholarships || [];
+  const savedScholarships = allScholarships.filter(s => {
+    const id = typeof s === 'string' ? s : s.id;
+    return savedIds.some(item => (typeof item === 'string' ? item === id : item.id === id));
+  });
+
+  const closingSoon = savedScholarships.filter(s => {
+    const status = getDeadlineStatus(s.application_end);
+    return status.daysRem !== null && status.daysRem >= 0 && status.daysRem <= 3;
+  });
+
+  if (closingSoon.length > 0) {
+    alertContainer.style.display = 'block';
+    alertContainer.innerHTML = `
+      <div class="dashboard-alert">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <p>Attention: You have <span>${closingSoon.length} scholarship(s)</span> closing soon! Apply before they expire.</p>
+      </div>
+    `;
+  } else {
+    alertContainer.style.display = 'none';
+  }
 }
 
 
@@ -742,7 +1163,9 @@ function renderSavedScholarships() {
     return;
   }
 
-  const savedScholarships = allScholarships.filter(s => savedIds.includes(s.id));
+  const savedScholarships = allScholarships.filter(s => 
+    savedIds.some(item => (typeof item === 'string' ? item === s.id : item.id === s.id))
+  );
 
   if (countEl) {
     countEl.textContent = `You have ${savedScholarships.length} saved scholarship${savedScholarships.length !== 1 ? 's' : ''}`;
@@ -950,6 +1373,12 @@ function exportSavedScholarshipsPDF() {
 
 
 function setupEventListeners() {
+  // Modal Close Buttons
+  const closeBtnModal = document.getElementById('compare-modal-close');
+  const closeBtnModalBottom = document.getElementById('compare-modal-close-btn');
+  if (closeBtnModal) closeBtnModal.addEventListener('click', closeCompareModal);
+  if (closeBtnModalBottom) closeBtnModalBottom.addEventListener('click', closeCompareModal);
+
   if (modalCloseBtn) {
     modalCloseBtn.addEventListener('click', closeModal);
   }
@@ -1021,6 +1450,20 @@ function setupEventListeners() {
       const scholarshipId = saveBtn.dataset.scholarshipId;
       saveScholarship(scholarshipId);
     }
+
+    // Compare button
+    if (e.target.classList.contains('btn-compare')) {
+      const id = e.target.dataset.id;
+      toggleCompare(id);
+    }
+  });
+
+  document.addEventListener('change', (e) => {
+    if (e.target.classList.contains('status-toggle')) {
+      const id = e.target.dataset.id;
+      const status = e.target.value;
+      updateScholarshipStatus(id, status);
+    }
   });
 
   if (loginForm) {
@@ -1062,17 +1505,7 @@ function setupEventListeners() {
     });
   }
 
-  // Compare Buttons event delegation
-  document.addEventListener('click', (e) => {
-    const compareBtn = e.target.closest('.btn-compare');
-    if (compareBtn) {
-      const id = compareBtn.dataset.id;
-      addToCompare(id);
-    }
-  });
 
-  // Initial update
-  updateCompareFloatingButton();
 }
 
 

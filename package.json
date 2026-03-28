@@ -1,0 +1,13 @@
+{
+  "name": "scholarseva",
+  "version": "1.0.0",
+  "description": "ScholarSeva - Full stack decision support system",
+  "scripts": {
+    "start:frontend": "npx -y serve .",
+    "start:backend": "cd server && node server.js",
+    "dev": "npx -y concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

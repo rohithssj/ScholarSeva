@@ -48,6 +48,47 @@
                 <button class="btn btn-secondary btn2" id="logout-btn">Logout</button>
             </div>
 
+            <!-- ============= COMPLETE PROFILE (for Recommendations) ============= -->
+            <div class="profile-card profile-update-card">
+                <h3>Complete Your Profile</h3>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Provide these details for smart scholarship recommendations.</p>
+                <form id="profile-update-form" class="auth-form" style="width: 100%;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="profile-category">Category</label>
+                            <select id="profile-category">
+                                <option value="">Select Category</option>
+                                <option value="sc">SC</option>
+                                <option value="obc">OBC</option>
+                                <option value="st">ST</option>
+                                <option value="general">General</option>
+                                <option value="min">Minority</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-income">Annual Income (₹)</label>
+                            <input type="number" id="profile-income" placeholder="e.g. 250000">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-state">State</label>
+                            <input type="text" id="profile-state" placeholder="e.g. Karnataka">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-education">Education Level</label>
+                            <select id="profile-education">
+                                <option value="">Select Level</option>
+                                <option value="ug">Under Graduate</option>
+                                <option value="pg">Post Graduate</option>
+                                <option value="Pre-Matric">Pre-Matric</option>
+                                <option value="Post-Matric">Post-Matric</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary auth-btn" style="margin-top: 20px;">Update Profile</button>
+                    <p id="profile-update-success" class="auth-success" style="margin-top: 10px;">Profile updated successfully!</p>
+                </form>
+            </div>
+
             <!-- ============= SAVED SCHOLARSHIPS ============= -->
             <div class="saved-scholarships-section">
                 <h2>Saved Scholarships</h2>
@@ -70,6 +111,7 @@
                     </button>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -83,10 +125,12 @@
             </div>
             <div class="modal-actions">
                 <a href="#" id="modal-apply-btn" target="_blank" class="btn-apply btn">Apply Now</a>
+                <button class="btn btn-copy-link" id="modal-copy-link-btn" title="Copy apply link">Copy Link</button>
                 <button class="btn btn-close-modal" id="modal-close-btn">Close</button>
             </div>
         </div>
     </div>
+
 
     <!-- ============= FOOTER ============= -->
     <footer>
@@ -98,6 +142,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/ai.js"></script>
     <script src="script.js"></script>
 </body>
 

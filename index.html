@@ -80,6 +80,17 @@
     <!-- ============= MAIN SCHOLARSHIPS SECTION ============= -->
     <section class="scholarships">
         <div class="container">
+            <div id="deadline-alerts" style="display: none;">
+                <!-- Alerts will be injected here if any scholarships are closing soon -->
+            </div>
+
+            <div id="recommended-section" style="display: none;" class="recommendation-section">
+                <h3>Recommended For You</h3>
+                <div class="card-container" id="recommended-scholarships">
+                    <!-- Recommended scholarships will be populated here -->
+                </div>
+            </div>
+
             <h2>Featured Scholarships</h2>
             <p id="resultCount" style="text-align: center; margin: 20px 0; color: var(--text-muted);">
                 Loading scholarships...
@@ -154,6 +165,7 @@
         </div>
     </div>
 
+
     <!-- ============= FOOTER ============= -->
     <footer>
         <div class="container">
@@ -187,6 +199,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/ai.js"></script>
     <script src="script.js"></script>
 </body>
 
