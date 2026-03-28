@@ -4,7 +4,10 @@
     "name": "Andhra Pradesh Pre-Matric Scholarship Scheme",
     "provider": "Andhra Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Andhra Pradesh",
     "application_start": null,
@@ -20,7 +23,10 @@
     "name": "Andhra Pradesh Post-Matric Scholarship Scheme",
     "provider": "Andhra Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Andhra Pradesh",
     "application_start": null,
@@ -36,7 +42,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Andhra Pradesh",
     "application_start": null,
@@ -52,7 +61,10 @@
     "name": "Andhra Pradesh Postgraduate Scholarship Scheme",
     "provider": "Andhra Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Andhra Pradesh",
     "application_start": null,
@@ -68,7 +80,10 @@
     "name": "Andhra Pradesh Vocational Scholarship Scheme",
     "provider": "Andhra Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Andhra Pradesh",
     "application_start": null,
@@ -84,7 +99,10 @@
     "name": "Arunachal Pradesh Pre-Matric Scholarship Scheme",
     "provider": "Arunachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Arunachal Pradesh",
     "application_start": null,
@@ -100,7 +118,10 @@
     "name": "Arunachal Pradesh Post-Matric Scholarship Scheme",
     "provider": "Arunachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Arunachal Pradesh",
     "application_start": null,
@@ -116,7 +137,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Arunachal Pradesh",
     "application_start": null,
@@ -132,7 +156,10 @@
     "name": "Arunachal Pradesh Postgraduate Scholarship Scheme",
     "provider": "Arunachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Arunachal Pradesh",
     "application_start": null,
@@ -148,7 +175,10 @@
     "name": "Arunachal Pradesh Vocational Scholarship Scheme",
     "provider": "Arunachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Arunachal Pradesh",
     "application_start": null,
@@ -164,7 +194,10 @@
     "name": "Assam Pre-Matric Scholarship Scheme",
     "provider": "Assam State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Assam",
     "application_start": null,
@@ -180,7 +213,10 @@
     "name": "Assam Post-Matric Scholarship Scheme",
     "provider": "Assam State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Assam",
     "application_start": null,
@@ -196,7 +232,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Assam",
     "application_start": null,
@@ -212,7 +251,10 @@
     "name": "Assam Postgraduate Scholarship Scheme",
     "provider": "Assam State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Assam",
     "application_start": null,
@@ -228,7 +270,10 @@
     "name": "Assam Vocational Scholarship Scheme",
     "provider": "Assam State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Assam",
     "application_start": null,
@@ -244,7 +289,10 @@
     "name": "Bihar Pre-Matric Scholarship Scheme",
     "provider": "Bihar State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Bihar",
     "application_start": null,
@@ -260,7 +308,10 @@
     "name": "Bihar Post-Matric Scholarship Scheme",
     "provider": "Bihar State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Bihar",
     "application_start": null,
@@ -276,7 +327,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Bihar",
     "application_start": null,
@@ -292,7 +346,10 @@
     "name": "Bihar Postgraduate Scholarship Scheme",
     "provider": "Bihar State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Bihar",
     "application_start": null,
@@ -308,7 +365,10 @@
     "name": "Bihar Vocational Scholarship Scheme",
     "provider": "Bihar State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Bihar",
     "application_start": null,
@@ -324,7 +384,10 @@
     "name": "Chhattisgarh Pre-Matric Scholarship Scheme",
     "provider": "Chhattisgarh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Chhattisgarh",
     "application_start": null,
@@ -340,7 +403,10 @@
     "name": "Chhattisgarh Post-Matric Scholarship Scheme",
     "provider": "Chhattisgarh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Chhattisgarh",
     "application_start": null,
@@ -356,7 +422,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Chhattisgarh",
     "application_start": null,
@@ -372,7 +441,10 @@
     "name": "Chhattisgarh Postgraduate Scholarship Scheme",
     "provider": "Chhattisgarh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Chhattisgarh",
     "application_start": null,
@@ -388,7 +460,10 @@
     "name": "Chhattisgarh Vocational Scholarship Scheme",
     "provider": "Chhattisgarh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Chhattisgarh",
     "application_start": null,
@@ -404,7 +479,10 @@
     "name": "Goa Pre-Matric Scholarship Scheme",
     "provider": "Goa State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Goa",
     "application_start": null,
@@ -420,7 +498,10 @@
     "name": "Goa Post-Matric Scholarship Scheme",
     "provider": "Goa State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Goa",
     "application_start": null,
@@ -436,7 +517,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Goa",
     "application_start": null,
@@ -452,7 +536,10 @@
     "name": "Goa Postgraduate Scholarship Scheme",
     "provider": "Goa State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Goa",
     "application_start": null,
@@ -468,7 +555,10 @@
     "name": "Goa Vocational Scholarship Scheme",
     "provider": "Goa State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Goa",
     "application_start": null,
@@ -484,7 +574,10 @@
     "name": "Gujarat Pre-Matric Scholarship Scheme",
     "provider": "Gujarat State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Gujarat",
     "application_start": null,
@@ -500,7 +593,10 @@
     "name": "Gujarat Post-Matric Scholarship Scheme",
     "provider": "Gujarat State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Gujarat",
     "application_start": null,
@@ -516,7 +612,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Gujarat",
     "application_start": null,
@@ -532,7 +631,10 @@
     "name": "Gujarat Postgraduate Scholarship Scheme",
     "provider": "Gujarat State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Gujarat",
     "application_start": null,
@@ -548,7 +650,10 @@
     "name": "Gujarat Vocational Scholarship Scheme",
     "provider": "Gujarat State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Gujarat",
     "application_start": null,
@@ -564,7 +669,10 @@
     "name": "Haryana Pre-Matric Scholarship Scheme",
     "provider": "Haryana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Haryana",
     "application_start": null,
@@ -580,7 +688,10 @@
     "name": "Haryana Post-Matric Scholarship Scheme",
     "provider": "Haryana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Haryana",
     "application_start": null,
@@ -596,7 +707,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Haryana",
     "application_start": null,
@@ -612,7 +726,10 @@
     "name": "Haryana Postgraduate Scholarship Scheme",
     "provider": "Haryana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Haryana",
     "application_start": null,
@@ -628,7 +745,10 @@
     "name": "Haryana Vocational Scholarship Scheme",
     "provider": "Haryana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Haryana",
     "application_start": null,
@@ -644,7 +764,10 @@
     "name": "Himachal Pradesh Pre-Matric Scholarship Scheme",
     "provider": "Himachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Himachal Pradesh",
     "application_start": null,
@@ -660,7 +783,10 @@
     "name": "Himachal Pradesh Post-Matric Scholarship Scheme",
     "provider": "Himachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Himachal Pradesh",
     "application_start": null,
@@ -676,7 +802,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Himachal Pradesh",
     "application_start": null,
@@ -692,7 +821,10 @@
     "name": "Himachal Pradesh Postgraduate Scholarship Scheme",
     "provider": "Himachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Himachal Pradesh",
     "application_start": null,
@@ -708,7 +840,10 @@
     "name": "Himachal Pradesh Vocational Scholarship Scheme",
     "provider": "Himachal Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Himachal Pradesh",
     "application_start": null,
@@ -724,7 +859,10 @@
     "name": "Jharkhand Pre-Matric Scholarship Scheme",
     "provider": "Jharkhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Jharkhand",
     "application_start": null,
@@ -740,7 +878,10 @@
     "name": "Jharkhand Post-Matric Scholarship Scheme",
     "provider": "Jharkhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Jharkhand",
     "application_start": null,
@@ -756,7 +897,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Jharkhand",
     "application_start": null,
@@ -772,7 +916,10 @@
     "name": "Jharkhand Postgraduate Scholarship Scheme",
     "provider": "Jharkhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Jharkhand",
     "application_start": null,
@@ -788,7 +935,10 @@
     "name": "Jharkhand Vocational Scholarship Scheme",
     "provider": "Jharkhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Jharkhand",
     "application_start": null,
@@ -804,7 +954,10 @@
     "name": "Karnataka Pre-Matric Scholarship Scheme",
     "provider": "Karnataka State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Karnataka",
     "application_start": null,
@@ -820,7 +973,10 @@
     "name": "Karnataka Post-Matric Scholarship Scheme",
     "provider": "Karnataka State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Karnataka",
     "application_start": null,
@@ -836,7 +992,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Karnataka",
     "application_start": null,
@@ -852,7 +1011,10 @@
     "name": "Karnataka Postgraduate Scholarship Scheme",
     "provider": "Karnataka State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Karnataka",
     "application_start": null,
@@ -868,7 +1030,10 @@
     "name": "Karnataka Vocational Scholarship Scheme",
     "provider": "Karnataka State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Karnataka",
     "application_start": null,
@@ -884,7 +1049,10 @@
     "name": "Kerala Pre-Matric Scholarship Scheme",
     "provider": "Kerala State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Kerala",
     "application_start": null,
@@ -900,7 +1068,10 @@
     "name": "Kerala Post-Matric Scholarship Scheme",
     "provider": "Kerala State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Kerala",
     "application_start": null,
@@ -916,7 +1087,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Kerala",
     "application_start": null,
@@ -932,7 +1106,10 @@
     "name": "Kerala Postgraduate Scholarship Scheme",
     "provider": "Kerala State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Kerala",
     "application_start": null,
@@ -948,7 +1125,10 @@
     "name": "Kerala Vocational Scholarship Scheme",
     "provider": "Kerala State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Kerala",
     "application_start": null,
@@ -964,7 +1144,10 @@
     "name": "Madhya Pradesh Pre-Matric Scholarship Scheme",
     "provider": "Madhya Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Madhya Pradesh",
     "application_start": null,
@@ -980,7 +1163,10 @@
     "name": "Madhya Pradesh Post-Matric Scholarship Scheme",
     "provider": "Madhya Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Madhya Pradesh",
     "application_start": null,
@@ -996,7 +1182,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Madhya Pradesh",
     "application_start": null,
@@ -1012,7 +1201,10 @@
     "name": "Madhya Pradesh Postgraduate Scholarship Scheme",
     "provider": "Madhya Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Madhya Pradesh",
     "application_start": null,
@@ -1028,7 +1220,10 @@
     "name": "Madhya Pradesh Vocational Scholarship Scheme",
     "provider": "Madhya Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Madhya Pradesh",
     "application_start": null,
@@ -1044,7 +1239,10 @@
     "name": "Maharashtra Pre-Matric Scholarship Scheme",
     "provider": "Maharashtra State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Maharashtra",
     "application_start": null,
@@ -1060,7 +1258,10 @@
     "name": "Maharashtra Post-Matric Scholarship Scheme",
     "provider": "Maharashtra State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Maharashtra",
     "application_start": null,
@@ -1076,7 +1277,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Maharashtra",
     "application_start": null,
@@ -1092,7 +1296,10 @@
     "name": "Maharashtra Postgraduate Scholarship Scheme",
     "provider": "Maharashtra State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Maharashtra",
     "application_start": null,
@@ -1108,7 +1315,10 @@
     "name": "Maharashtra Vocational Scholarship Scheme",
     "provider": "Maharashtra State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Maharashtra",
     "application_start": null,
@@ -1124,7 +1334,10 @@
     "name": "Manipur Pre-Matric Scholarship Scheme",
     "provider": "Manipur State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Manipur",
     "application_start": null,
@@ -1140,7 +1353,10 @@
     "name": "Manipur Post-Matric Scholarship Scheme",
     "provider": "Manipur State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Manipur",
     "application_start": null,
@@ -1156,7 +1372,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Manipur",
     "application_start": null,
@@ -1172,7 +1391,10 @@
     "name": "Manipur Postgraduate Scholarship Scheme",
     "provider": "Manipur State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Manipur",
     "application_start": null,
@@ -1188,7 +1410,10 @@
     "name": "Manipur Vocational Scholarship Scheme",
     "provider": "Manipur State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Manipur",
     "application_start": null,
@@ -1204,7 +1429,10 @@
     "name": "Meghalaya Pre-Matric Scholarship Scheme",
     "provider": "Meghalaya State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Meghalaya",
     "application_start": null,
@@ -1220,7 +1448,10 @@
     "name": "Meghalaya Post-Matric Scholarship Scheme",
     "provider": "Meghalaya State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Meghalaya",
     "application_start": null,
@@ -1236,7 +1467,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Meghalaya",
     "application_start": null,
@@ -1252,7 +1486,10 @@
     "name": "Meghalaya Postgraduate Scholarship Scheme",
     "provider": "Meghalaya State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Meghalaya",
     "application_start": null,
@@ -1268,7 +1505,10 @@
     "name": "Meghalaya Vocational Scholarship Scheme",
     "provider": "Meghalaya State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Meghalaya",
     "application_start": null,
@@ -1284,7 +1524,10 @@
     "name": "Mizoram Pre-Matric Scholarship Scheme",
     "provider": "Mizoram State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Mizoram",
     "application_start": null,
@@ -1300,7 +1543,10 @@
     "name": "Mizoram Post-Matric Scholarship Scheme",
     "provider": "Mizoram State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Mizoram",
     "application_start": null,
@@ -1316,7 +1562,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Mizoram",
     "application_start": null,
@@ -1332,7 +1581,10 @@
     "name": "Mizoram Postgraduate Scholarship Scheme",
     "provider": "Mizoram State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Mizoram",
     "application_start": null,
@@ -1348,7 +1600,10 @@
     "name": "Mizoram Vocational Scholarship Scheme",
     "provider": "Mizoram State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Mizoram",
     "application_start": null,
@@ -1364,7 +1619,10 @@
     "name": "Nagaland Pre-Matric Scholarship Scheme",
     "provider": "Nagaland State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Nagaland",
     "application_start": null,
@@ -1380,7 +1638,10 @@
     "name": "Nagaland Post-Matric Scholarship Scheme",
     "provider": "Nagaland State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Nagaland",
     "application_start": null,
@@ -1396,7 +1657,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Nagaland",
     "application_start": null,
@@ -1412,7 +1676,10 @@
     "name": "Nagaland Postgraduate Scholarship Scheme",
     "provider": "Nagaland State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Nagaland",
     "application_start": null,
@@ -1428,7 +1695,10 @@
     "name": "Nagaland Vocational Scholarship Scheme",
     "provider": "Nagaland State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Nagaland",
     "application_start": null,
@@ -1444,7 +1714,10 @@
     "name": "Odisha Pre-Matric Scholarship Scheme",
     "provider": "Odisha State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Odisha",
     "application_start": null,
@@ -1460,7 +1733,10 @@
     "name": "Odisha Post-Matric Scholarship Scheme",
     "provider": "Odisha State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Odisha",
     "application_start": null,
@@ -1476,7 +1752,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Odisha",
     "application_start": null,
@@ -1492,7 +1771,10 @@
     "name": "Odisha Postgraduate Scholarship Scheme",
     "provider": "Odisha State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Odisha",
     "application_start": null,
@@ -1508,7 +1790,10 @@
     "name": "Odisha Vocational Scholarship Scheme",
     "provider": "Odisha State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Odisha",
     "application_start": null,
@@ -1524,7 +1809,10 @@
     "name": "Punjab Pre-Matric Scholarship Scheme",
     "provider": "Punjab State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Punjab",
     "application_start": null,
@@ -1540,7 +1828,10 @@
     "name": "Punjab Post-Matric Scholarship Scheme",
     "provider": "Punjab State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Punjab",
     "application_start": null,
@@ -1556,7 +1847,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Punjab",
     "application_start": null,
@@ -1572,7 +1866,10 @@
     "name": "Punjab Postgraduate Scholarship Scheme",
     "provider": "Punjab State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Punjab",
     "application_start": null,
@@ -1588,7 +1885,10 @@
     "name": "Punjab Vocational Scholarship Scheme",
     "provider": "Punjab State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Punjab",
     "application_start": null,
@@ -1604,7 +1904,10 @@
     "name": "Rajasthan Pre-Matric Scholarship Scheme",
     "provider": "Rajasthan State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Rajasthan",
     "application_start": null,
@@ -1620,7 +1923,10 @@
     "name": "Rajasthan Post-Matric Scholarship Scheme",
     "provider": "Rajasthan State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Rajasthan",
     "application_start": null,
@@ -1636,7 +1942,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Rajasthan",
     "application_start": null,
@@ -1652,7 +1961,10 @@
     "name": "Rajasthan Postgraduate Scholarship Scheme",
     "provider": "Rajasthan State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Rajasthan",
     "application_start": null,
@@ -1668,7 +1980,10 @@
     "name": "Rajasthan Vocational Scholarship Scheme",
     "provider": "Rajasthan State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Rajasthan",
     "application_start": null,
@@ -1684,7 +1999,10 @@
     "name": "Sikkim Pre-Matric Scholarship Scheme",
     "provider": "Sikkim State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Sikkim",
     "application_start": null,
@@ -1700,7 +2018,10 @@
     "name": "Sikkim Post-Matric Scholarship Scheme",
     "provider": "Sikkim State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Sikkim",
     "application_start": null,
@@ -1716,7 +2037,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Sikkim",
     "application_start": null,
@@ -1732,7 +2056,10 @@
     "name": "Sikkim Postgraduate Scholarship Scheme",
     "provider": "Sikkim State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Sikkim",
     "application_start": null,
@@ -1748,7 +2075,10 @@
     "name": "Sikkim Vocational Scholarship Scheme",
     "provider": "Sikkim State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Sikkim",
     "application_start": null,
@@ -1764,7 +2094,10 @@
     "name": "Tamil Nadu Pre-Matric Scholarship Scheme",
     "provider": "Tamil Nadu State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Tamil Nadu",
     "application_start": null,
@@ -1780,7 +2113,10 @@
     "name": "Tamil Nadu Post-Matric Scholarship Scheme",
     "provider": "Tamil Nadu State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Tamil Nadu",
     "application_start": null,
@@ -1796,7 +2132,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Tamil Nadu",
     "application_start": null,
@@ -1812,7 +2151,10 @@
     "name": "Tamil Nadu Postgraduate Scholarship Scheme",
     "provider": "Tamil Nadu State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Tamil Nadu",
     "application_start": null,
@@ -1828,7 +2170,10 @@
     "name": "Tamil Nadu Vocational Scholarship Scheme",
     "provider": "Tamil Nadu State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Tamil Nadu",
     "application_start": null,
@@ -1844,7 +2189,10 @@
     "name": "Telangana Pre-Matric Scholarship Scheme",
     "provider": "Telangana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Telangana",
     "application_start": null,
@@ -1860,7 +2208,10 @@
     "name": "Telangana Post-Matric Scholarship Scheme",
     "provider": "Telangana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Telangana",
     "application_start": null,
@@ -1876,7 +2227,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Telangana",
     "application_start": null,
@@ -1892,7 +2246,10 @@
     "name": "Telangana Postgraduate Scholarship Scheme",
     "provider": "Telangana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Telangana",
     "application_start": null,
@@ -1908,7 +2265,10 @@
     "name": "Telangana Vocational Scholarship Scheme",
     "provider": "Telangana State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Telangana",
     "application_start": null,
@@ -1924,7 +2284,10 @@
     "name": "Tripura Pre-Matric Scholarship Scheme",
     "provider": "Tripura State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Tripura",
     "application_start": null,
@@ -1940,7 +2303,10 @@
     "name": "Tripura Post-Matric Scholarship Scheme",
     "provider": "Tripura State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Tripura",
     "application_start": null,
@@ -1956,7 +2322,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Tripura",
     "application_start": null,
@@ -1972,7 +2341,10 @@
     "name": "Tripura Postgraduate Scholarship Scheme",
     "provider": "Tripura State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Tripura",
     "application_start": null,
@@ -1988,7 +2360,10 @@
     "name": "Tripura Vocational Scholarship Scheme",
     "provider": "Tripura State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Tripura",
     "application_start": null,
@@ -2004,7 +2379,10 @@
     "name": "Uttar Pradesh Pre-Matric Scholarship Scheme",
     "provider": "Uttar Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Uttar Pradesh",
     "application_start": null,
@@ -2020,7 +2398,10 @@
     "name": "Uttar Pradesh Post-Matric Scholarship Scheme",
     "provider": "Uttar Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Uttar Pradesh",
     "application_start": null,
@@ -2036,7 +2417,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Uttar Pradesh",
     "application_start": null,
@@ -2052,7 +2436,10 @@
     "name": "Uttar Pradesh Postgraduate Scholarship Scheme",
     "provider": "Uttar Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Uttar Pradesh",
     "application_start": null,
@@ -2068,7 +2455,10 @@
     "name": "Uttar Pradesh Vocational Scholarship Scheme",
     "provider": "Uttar Pradesh State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Uttar Pradesh",
     "application_start": null,
@@ -2084,7 +2474,10 @@
     "name": "Uttarakhand Pre-Matric Scholarship Scheme",
     "provider": "Uttarakhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "Uttarakhand",
     "application_start": null,
@@ -2100,7 +2493,10 @@
     "name": "Uttarakhand Post-Matric Scholarship Scheme",
     "provider": "Uttarakhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "Uttarakhand",
     "application_start": null,
@@ -2116,7 +2512,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "Uttarakhand",
     "application_start": null,
@@ -2132,7 +2531,10 @@
     "name": "Uttarakhand Postgraduate Scholarship Scheme",
     "provider": "Uttarakhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "Uttarakhand",
     "application_start": null,
@@ -2148,7 +2550,10 @@
     "name": "Uttarakhand Vocational Scholarship Scheme",
     "provider": "Uttarakhand State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "Uttarakhand",
     "application_start": null,
@@ -2164,7 +2569,10 @@
     "name": "West Bengal Pre-Matric Scholarship Scheme",
     "provider": "West Bengal State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 100000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Pre-Matric",
     "state": "West Bengal",
     "application_start": null,
@@ -2180,7 +2588,10 @@
     "name": "West Bengal Post-Matric Scholarship Scheme",
     "provider": "West Bengal State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Post-Matric",
     "state": "West Bengal",
     "application_start": null,
@@ -2196,7 +2607,10 @@
     "name": "Undergraduate Merit-cum-Means Scholarship (National)",
     "provider": "Central Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 450000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Undergraduate",
     "state": "West Bengal",
     "application_start": null,
@@ -2212,7 +2626,10 @@
     "name": "West Bengal Postgraduate Scholarship Scheme",
     "provider": "West Bengal State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 600000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Postgraduate",
     "state": "West Bengal",
     "application_start": null,
@@ -2228,7 +2645,10 @@
     "name": "West Bengal Vocational Scholarship Scheme",
     "provider": "West Bengal State Government",
     "category": "All",
-    "income_limit": "As per official guidelines",
+    "income_limit": {
+      "value": 250000,
+      "note": "May vary based on scheme"
+    },
     "education_level": "Vocational",
     "state": "West Bengal",
     "application_start": null,

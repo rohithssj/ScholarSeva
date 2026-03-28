@@ -1,5 +1,14 @@
 
 // ========================================
+// UTILS & HELPERS
+// ========================================
+
+function formatCurrency(num) {
+  if (num === null || num === undefined) return "N/A";
+  return num.toLocaleString('en-IN');
+}
+
+// ========================================
 // STATE MANAGEMENT
 // ========================================
 
@@ -260,7 +269,11 @@ function createScholarshipCard(scholarship, index) {
       <p><strong>Provider:</strong> ${scholarship.provider}</p>
       <p><strong>State:</strong> ${scholarship.state}</p>
       <p><strong>Education:</strong> ${scholarship.education_level}</p>
-      <p><strong>Income Limit:</strong> ${scholarship.income_limit}</p>
+      ${scholarship.income_limit && scholarship.income_limit.value !== undefined 
+        ? `<p><strong>Income Limit:</strong> ₹${formatCurrency(scholarship.income_limit.value)}*</p>
+           <p style="font-size: 0.75rem; color: #666; font-style: italic;">*${scholarship.income_limit.note}</p>`
+        : `<p><strong>Income Limit:</strong> As per official guidelines</p>`
+      }
     </div>
     <div class="card-btn">
       <button class="btn-view-details" data-index="${index}" data-id="${scholarship.id}">View Details</button>
@@ -312,7 +325,11 @@ function openModal(scholarshipId) {
     </div>
     <div class="modal-field">
       <label>Income Limit</label>
-      <p>${scholarship.income_limit}</p>
+      ${scholarship.income_limit && scholarship.income_limit.value !== undefined
+        ? `<p>₹${formatCurrency(scholarship.income_limit.value)}</p>
+           <p style="font-size: 0.9rem; color: #666;">Note: ${scholarship.income_limit.note}</p>`
+        : `<p>As per official guidelines</p>`
+      }
     </div>
     <div class="modal-field">
       <label>Application Portal</label>
@@ -348,11 +365,9 @@ function applyFilters(filterObj) {
       if (scholarship.category.toLowerCase() !== 'all') return false;
     }
 
-    if (income) {
-      const incomeLimit = scholarship.income_limit.toLowerCase();
-      if (!incomeLimit.includes('varies') && !incomeLimit.includes('as per')) {
-        const limit = parseInt(incomeLimit.replace(/[^0-9]/g, ''));
-        if (!isNaN(limit) && limit < income) return false;
+    if (income && scholarship.income_limit && scholarship.income_limit.value !== undefined) {
+      if (!(income === "" || scholarship.income_limit.value >= Number(income))) {
+        return false;
       }
     }
 
@@ -721,7 +736,7 @@ function generateScholarshipPDF(scholarships, title, filterSummary, filename) {
       `Education Level: ${s.education_level}`,
       `Provider: ${s.provider}`,
       `Category: ${s.category}`,
-      `Income Limit: ${s.income_limit}`,
+      `Income Limit: Rs. ${formatCurrency(s.income_limit.value)} (${s.income_limit.note})`,
       `Portal: ${s.apply_link.site_name}`,
       `Apply Link: ${s.apply_link.url}`
     ];
