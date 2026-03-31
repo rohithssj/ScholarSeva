@@ -130,8 +130,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadScholarships();
   }
 
+
   initializePage();
   setupEventListeners();
+  initChatbot();
 });
 
 // ========================================
@@ -1517,4 +1519,117 @@ function showErrorMessage(message) {
   if (scholarshipsGrid) {
     scholarshipsGrid.innerHTML = `<div class="empty-state"><h2>Error</h2><p>${message}</p></div>`;
   }
+
 }
+
+/**
+ * ========================================
+ * AI CHATBOT INITIALIZATION
+ * ========================================
+ */
+
+function initChatbot() {
+  // Inject HTML if doesn't exist
+  if (document.getElementById('ai-chatbot')) return;
+
+  const chatbotHTML = `
+    <div id="ai-chatbot" class="chatbot-container minimized">
+        <div class="chatbot-header" id="chatbot-header">
+            <span>ScholarSeva AI Assistant</span>
+            <button id="chatbot-toggle">▲</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-messages">
+            <div class="message bot-message">Hi! I'm your scholarship assistant. Ask me anything about eligibility or scholarship details.</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="Ask about scholarships...">
+            <button id="chatbot-send-btn">Send</button>
+        </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML('beforeend', chatbotHTML);
+
+  const chatbot = document.getElementById('ai-chatbot');
+  const header = document.getElementById('chatbot-header');
+  const toggleBtn = document.getElementById('chatbot-toggle');
+  const sendBtn = document.getElementById('chatbot-send-btn');
+  const userInput = document.getElementById('chatbot-user-input');
+  const messagesContainer = document.getElementById('chatbot-messages');
+
+
+  // Minimize/Maximize toggle
+  header.addEventListener('click', (e) => {
+    e.stopPropagation();
+    chatbot.classList.toggle('minimized');
+    const isMinimized = chatbot.classList.contains('minimized');
+    toggleBtn.textContent = isMinimized ? '▲' : '▼';
+    
+    // Toggle body class for layout adjustments (e.g. Compare Button)
+    if (isMinimized) {
+      document.body.classList.remove('chatbot-open');
+    } else {
+      document.body.classList.add('chatbot-open');
+    }
+  });
+
+  const sendMessage = async () => {
+    const text = userInput.value.trim();
+    if (!text) return;
+
+    // Add user message
+    addChatMessage(text, 'user');
+    userInput.value = '';
+
+    // Add thinking...
+    const thinkingId = 'thinking-' + Date.now();
+    const thinkingDiv = document.createElement('div');
+    thinkingDiv.id = thinkingId;
+    thinkingDiv.className = 'chatbot-loading';
+    thinkingDiv.textContent = 'Thinking...';
+    messagesContainer.appendChild(thinkingDiv);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+    const userProfile = getCurrentUser() || {};
+    const scholarships = allScholarships || [];
+
+    try {
+      const response = await handleChatMessage(text, userProfile, scholarships);
+      thinkingDiv.remove();
+      
+      if (response && !response.includes('unavailable')) {
+        addChatMessage(response, 'bot');
+        saveToChatHistory(text, 'user');
+        saveToChatHistory(response, 'bot');
+      } else {
+        addChatMessage('AI assistant unavailable, please try again', 'bot');
+      }
+    } catch (error) {
+      if (thinkingDiv) thinkingDiv.remove();
+      addChatMessage('AI assistant unavailable, please try again', 'bot');
+    }
+  };
+
+  sendBtn.addEventListener('click', sendMessage);
+  userInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendMessage();
+  });
+
+  // Load history from localStorage
+  const history = getChatHistory();
+  if (history && history.length > 0) {
+    messagesContainer.innerHTML = '';
+    history.forEach(msg => addChatMessage(msg.content, msg.role));
+  }
+}
+
+function addChatMessage(content, role) {
+  const messagesContainer = document.getElementById('chatbot-messages');
+  if (!messagesContainer) return;
+
+  const div = document.createElement('div');
+  div.className = `message ${role}-message`;
+  div.textContent = content;
+  messagesContainer.appendChild(div);
+  messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}

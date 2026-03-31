@@ -147,4 +147,56 @@ Deadline: ${daysLeft || 'Ongoing'} days left`;
     localStorage.setItem(cacheKey, result);
   }
   return result;
+
 }
+
+/**
+ * FEATURE 6: AI Chatbot Assistant
+ */
+async function handleChatMessage(userMessage, userProfile, scholarships) {
+  // Model upgrade option as per prompt
+  const model = 'openai/gpt-3.5-turbo'; 
+  
+  // Create the tailored prompt
+  const prompt = `You are a helpful scholarship assistant.
+
+User profile:
+${JSON.stringify(userProfile)}
+
+Available scholarships:
+${JSON.stringify(scholarships.slice(0, 5))}
+
+User question:
+${userMessage}
+
+Instructions:
+* Answer in simple, short sentences
+* Suggest scholarships if relevant
+* Mention eligibility if possible
+* Keep response under 5 lines`;
+
+  // Call the existing callAI function
+  const response = await callAI(prompt, model);
+  return response;
+}
+
+/**
+ * Manage Chat History in localStorage
+ */
+function getChatHistory() {
+  try {
+    return JSON.parse(localStorage.getItem('scholarseva_chat_history')) || [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveToChatHistory(message, role) {
+  const history = getChatHistory();
+  history.push({ role, content: message, timestamp: new Date().toISOString() });
+  
+  // Keep last 5 messages as per prompt
+  const limitedHistory = history.slice(-5);
+  localStorage.setItem('scholarseva_chat_history', JSON.stringify(limitedHistory));
+}
+
